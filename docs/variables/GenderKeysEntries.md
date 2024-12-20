@@ -16,4 +16,4 @@ Gender 객체의 키에서 파생된 엔트리 배열
 
 ## Defined in
 
-[enums/Gender.ts:74](https://github.com/jngcompany/icru-lib/blob/c1136b1cca3e7fccee98611dd392fe7b79b1145a/src/enums/Gender.ts#L74)
+[enums/Gender.ts:74](https://github.com/jngcompany/icru-lib/blob/256d6a1256b31526527eaee4aeab346b456a87aa/src/enums/Gender.ts#L74)

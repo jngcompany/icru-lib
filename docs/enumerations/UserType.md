@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[enums/UserType.ts:14](https://github.com/jngcompany/icru-lib/blob/c1136b1cca3e7fccee98611dd392fe7b79b1145a/src/enums/UserType.ts#L14)
+[enums/UserType.ts:14](https://github.com/jngcompany/icru-lib/blob/256d6a1256b31526527eaee4aeab346b456a87aa/src/enums/UserType.ts#L14)
 
 ***
 
@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[enums/UserType.ts:16](https://github.com/jngcompany/icru-lib/blob/c1136b1cca3e7fccee98611dd392fe7b79b1145a/src/enums/UserType.ts#L16)
+[enums/UserType.ts:16](https://github.com/jngcompany/icru-lib/blob/256d6a1256b31526527eaee4aeab346b456a87aa/src/enums/UserType.ts#L16)
 
 ***
 
@@ -42,4 +42,4 @@
 
 #### Defined in
 
-[enums/UserType.ts:15](https://github.com/jngcompany/icru-lib/blob/c1136b1cca3e7fccee98611dd392fe7b79b1145a/src/enums/UserType.ts#L15)
+[enums/UserType.ts:15](https://github.com/jngcompany/icru-lib/blob/256d6a1256b31526527eaee4aeab346b456a87aa/src/enums/UserType.ts#L15)

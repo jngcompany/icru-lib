@@ -14,7 +14,7 @@ import { UseDeleteDocParams } from "src/interfaces/UseDeleteDocParams"
  * const { mutate } = useDeleteDoc({ name: CollectionNames.PRODUCT })
  * mutate('productId')
  */
-export default function useDeleteDoc<T>(params: UseDeleteDocParams, firestore: Firestore): UseMutationResult<Doc<T>, Error, string> {
+export function useDeleteDoc<T>(params: UseDeleteDocParams, firestore: Firestore): UseMutationResult<Doc<T>, Error, string> {
   const queryClient = useQueryClient()
 
   return useMutation<Doc<T>, Error, string>({

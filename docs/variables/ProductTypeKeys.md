@@ -15,4 +15,4 @@ ProductType 객체의 키를 문자열 배열로 캐스팅한 배열입니다.
 
 ## Defined in
 
-[enums/ProductType.ts:28](https://github.com/jngcompany/icru-lib/blob/c1136b1cca3e7fccee98611dd392fe7b79b1145a/src/enums/ProductType.ts#L28)
+[enums/ProductType.ts:28](https://github.com/jngcompany/icru-lib/blob/256d6a1256b31526527eaee4aeab346b456a87aa/src/enums/ProductType.ts#L28)

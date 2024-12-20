@@ -98,4 +98,8 @@
 ## Functions
 
 - [getSubTypeByMain](functions/getSubTypeByMain.md)
+- [useCreateDoc](functions/useCreateDoc.md)
+- [useDeleteDoc](functions/useDeleteDoc.md)
 - [useDoc](functions/useDoc.md)
+- [useListQuery](functions/useListQuery.md)
+- [useUpdateDoc](functions/useUpdateDoc.md)

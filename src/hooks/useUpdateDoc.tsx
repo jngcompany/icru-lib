@@ -16,7 +16,7 @@ import { Firestore } from "firebase/firestore"
  * const { mutate } = useUpdateDoc({ name: Collections.USERS })
  * mutate({ id: '123', name: 'John Doe' })
  */
-export default function useUpdateDoc<T>(params: UseUpdateDocParams, firestore: Firestore): UseMutationResult<Doc<T>, Error, Doc<T>> {
+export function useUpdateDoc<T>(params: UseUpdateDocParams, firestore: Firestore): UseMutationResult<Doc<T>, Error, Doc<T>> {
   const queryClient = useQueryClient()
 
   return useMutation<Doc<T>, Error, Doc<T>>({

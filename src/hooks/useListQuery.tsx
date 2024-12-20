@@ -15,7 +15,7 @@ import { UseListQueryResult } from "src/interfaces/UseListQueryResult"
  * @param {string[]} params.fields - 필드 목록
  * @returns {UseListQueryResult<T>} 리스트 쿼리 결과
  */
-export default function useListQuery<T extends Doc<T>>(params: UseListQueryParams, firestore: Firestore): UseListQueryResult<T> {
+export function useListQuery<T extends Doc<T>>(params: UseListQueryParams, firestore: Firestore): UseListQueryResult<T> {
   // 리스트 아이템 배열
   const [items, setItems] = useState<T[]>([])
   // 현재 페이지 번호

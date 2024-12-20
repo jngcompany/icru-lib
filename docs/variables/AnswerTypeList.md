@@ -20,4 +20,4 @@
 
 ## Defined in
 
-[enums/AnswerType.ts:21](https://github.com/jngcompany/icru-lib/blob/c1136b1cca3e7fccee98611dd392fe7b79b1145a/src/enums/AnswerType.ts#L21)
+[enums/AnswerType.ts:21](https://github.com/jngcompany/icru-lib/blob/256d6a1256b31526527eaee4aeab346b456a87aa/src/enums/AnswerType.ts#L21)

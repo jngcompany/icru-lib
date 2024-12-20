@@ -15,7 +15,7 @@ import { UseCreateDocParams } from "src/interfaces/UseCreateDocParams"
  * const { mutate } = useCreateDoc({ name: CollectionNames.PRODUCT, callback: (doc) => { console.log(doc) } })
  * mutate({ name: 'Product 1', price: 1000, stock: 10 })
  */
-export default function useCreateDoc<T>(params: UseCreateDocParams<T>, firestore: Firestore): UseMutationResult<Doc<T>, Error, T> {
+export function useCreateDoc<T>(params: UseCreateDocParams<T>, firestore: Firestore): UseMutationResult<Doc<T>, Error, T> {
   const queryClient = useQueryClient()
 
   return useMutation<Doc<T>, Error, T>({

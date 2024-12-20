@@ -12,4 +12,4 @@ ProductTarget 열거형의 모든 가능한 문자열 값을 포함하는 배열
 
 ## Defined in
 
-[enums/ProductTarget.ts:20](https://github.com/jngcompany/icru-lib/blob/c1136b1cca3e7fccee98611dd392fe7b79b1145a/src/enums/ProductTarget.ts#L20)
+[enums/ProductTarget.ts:20](https://github.com/jngcompany/icru-lib/blob/256d6a1256b31526527eaee4aeab346b456a87aa/src/enums/ProductTarget.ts#L20)
