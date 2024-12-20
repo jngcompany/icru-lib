@@ -18,7 +18,7 @@
 
 #### Defined in
 
-enums/ProductType.ts:14
+[enums/ProductType.ts:14](https://github.com/jngcompany/icru-lib/blob/c1136b1cca3e7fccee98611dd392fe7b79b1145a/src/enums/ProductType.ts#L14)
 
 ***
 
@@ -30,4 +30,4 @@ enums/ProductType.ts:14
 
 #### Defined in
 
-enums/ProductType.ts:13
+[enums/ProductType.ts:13](https://github.com/jngcompany/icru-lib/blob/c1136b1cca3e7fccee98611dd392fe7b79b1145a/src/enums/ProductType.ts#L13)

@@ -18,7 +18,7 @@
 
 #### Defined in
 
-enums/QuestionType.ts:13
+[enums/QuestionType.ts:13](https://github.com/jngcompany/icru-lib/blob/c1136b1cca3e7fccee98611dd392fe7b79b1145a/src/enums/QuestionType.ts#L13)
 
 ***
 
@@ -30,4 +30,4 @@ enums/QuestionType.ts:13
 
 #### Defined in
 
-enums/QuestionType.ts:14
+[enums/QuestionType.ts:14](https://github.com/jngcompany/icru-lib/blob/c1136b1cca3e7fccee98611dd392fe7b79b1145a/src/enums/QuestionType.ts#L14)

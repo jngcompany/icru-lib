@@ -15,4 +15,4 @@ RevolutionerSubType 객체의 키를 문자열 배열로 캐스팅한 배열입�
 
 ## Defined in
 
-enums/DiagnosisCase.ts:90
+[enums/DiagnosisCase.ts:90](https://github.com/jngcompany/icru-lib/blob/c1136b1cca3e7fccee98611dd392fe7b79b1145a/src/enums/DiagnosisCase.ts#L90)

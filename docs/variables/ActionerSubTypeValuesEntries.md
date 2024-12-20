@@ -19,4 +19,4 @@ ActionerSubType 열거형의 값에서 파생된 키-값 쌍 배열
 
 ## Defined in
 
-enums/DiagnosisCase.ts:229
+[enums/DiagnosisCase.ts:229](https://github.com/jngcompany/icru-lib/blob/c1136b1cca3e7fccee98611dd392fe7b79b1145a/src/enums/DiagnosisCase.ts#L229)

@@ -16,4 +16,4 @@ DetectorSubType 객체의 키-값 쌍 배열
 
 ## Defined in
 
-enums/DiagnosisCase.ts:275
+[enums/DiagnosisCase.ts:275](https://github.com/jngcompany/icru-lib/blob/c1136b1cca3e7fccee98611dd392fe7b79b1145a/src/enums/DiagnosisCase.ts#L275)

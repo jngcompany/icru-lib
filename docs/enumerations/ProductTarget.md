@@ -18,7 +18,7 @@
 
 #### Defined in
 
-enums/ProductTarget.ts:13
+[enums/ProductTarget.ts:13](https://github.com/jngcompany/icru-lib/blob/c1136b1cca3e7fccee98611dd392fe7b79b1145a/src/enums/ProductTarget.ts#L13)
 
 ***
 
@@ -30,4 +30,4 @@ enums/ProductTarget.ts:13
 
 #### Defined in
 
-enums/ProductTarget.ts:14
+[enums/ProductTarget.ts:14](https://github.com/jngcompany/icru-lib/blob/c1136b1cca3e7fccee98611dd392fe7b79b1145a/src/enums/ProductTarget.ts#L14)

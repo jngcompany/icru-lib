@@ -16,4 +16,4 @@ Gender 객체의 키-값 쌍 배열
 
 ## Defined in
 
-[enums/Gender.ts:53](https://github.com/jngcompany/icru-lib/blob/b7449bcd797231bbdee859540a0491f84dffb672/src/enums/Gender.ts#L53)
+[enums/Gender.ts:53](https://github.com/jngcompany/icru-lib/blob/c1136b1cca3e7fccee98611dd392fe7b79b1145a/src/enums/Gender.ts#L53)

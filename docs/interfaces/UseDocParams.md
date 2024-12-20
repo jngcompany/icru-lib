@@ -19,7 +19,7 @@
 
 #### Defined in
 
-interfaces/UseDocParams.ts:13
+[interfaces/UseDocParams.ts:13](https://github.com/jngcompany/icru-lib/blob/c1136b1cca3e7fccee98611dd392fe7b79b1145a/src/interfaces/UseDocParams.ts#L13)
 
 ***
 
@@ -31,4 +31,4 @@ interfaces/UseDocParams.ts:13
 
 #### Defined in
 
-interfaces/UseDocParams.ts:11
+[interfaces/UseDocParams.ts:11](https://github.com/jngcompany/icru-lib/blob/c1136b1cca3e7fccee98611dd392fe7b79b1145a/src/interfaces/UseDocParams.ts#L11)

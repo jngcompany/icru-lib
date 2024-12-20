@@ -22,7 +22,7 @@
 
 #### Defined in
 
-interfaces/Doc.ts:10
+[interfaces/Doc.ts:10](https://github.com/jngcompany/icru-lib/blob/c1136b1cca3e7fccee98611dd392fe7b79b1145a/src/interfaces/Doc.ts#L10)
 
 ***
 
@@ -32,7 +32,7 @@ interfaces/Doc.ts:10
 
 #### Defined in
 
-interfaces/Doc.ts:12
+[interfaces/Doc.ts:12](https://github.com/jngcompany/icru-lib/blob/c1136b1cca3e7fccee98611dd392fe7b79b1145a/src/interfaces/Doc.ts#L12)
 
 ***
 
@@ -42,7 +42,7 @@ interfaces/Doc.ts:12
 
 #### Defined in
 
-interfaces/Doc.ts:9
+[interfaces/Doc.ts:9](https://github.com/jngcompany/icru-lib/blob/c1136b1cca3e7fccee98611dd392fe7b79b1145a/src/interfaces/Doc.ts#L9)
 
 ***
 
@@ -52,4 +52,4 @@ interfaces/Doc.ts:9
 
 #### Defined in
 
-interfaces/Doc.ts:11
+[interfaces/Doc.ts:11](https://github.com/jngcompany/icru-lib/blob/c1136b1cca3e7fccee98611dd392fe7b79b1145a/src/interfaces/Doc.ts#L11)

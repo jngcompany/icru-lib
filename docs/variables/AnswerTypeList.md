@@ -20,4 +20,4 @@
 
 ## Defined in
 
-enums/AnswerType.ts:21
+[enums/AnswerType.ts:21](https://github.com/jngcompany/icru-lib/blob/c1136b1cca3e7fccee98611dd392fe7b79b1145a/src/enums/AnswerType.ts#L21)

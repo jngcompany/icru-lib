@@ -16,4 +16,4 @@ UserType 객체의 키-값 쌍 배열
 
 ## Defined in
 
-enums/UserType.ts:41
+[enums/UserType.ts:41](https://github.com/jngcompany/icru-lib/blob/c1136b1cca3e7fccee98611dd392fe7b79b1145a/src/enums/UserType.ts#L41)
