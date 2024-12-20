@@ -1,10 +1,14 @@
-import { addDoc, collection, Timestamp } from "firebase/firestore"
+/*
+ * SPDX-FileCopyrightText: © 2024, 주식회사 지음과깃듬 <jngcompany.co.kr | asanobm@outlook.com>
+ * SPDX-License-Identifier: UNLICENSED
+ */
 
-import { useMutation, UseMutationResult, useQueryClient } from "@tanstack/react-query"
-import { Firestore } from "firebase/firestore"
-import { Doc } from "src/interfaces/Doc"
-import { UseCreateDocParams } from "src/interfaces/UseCreateDocParams"
-import { useEffect } from "react"
+import {addDoc, collection, Firestore, Timestamp} from "firebase/firestore"
+
+import {useMutation, UseMutationResult, useQueryClient} from "@tanstack/react-query"
+import {Doc} from "../interfaces/Doc"
+import {UseCreateDocParams} from "../interfaces/UseCreateDocParams"
+import {useEffect} from "react"
 
 /**
  * 제품 생성을 위한 커스텀 훅

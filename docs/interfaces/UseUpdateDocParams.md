@@ -25,7 +25,7 @@
 
 #### Defined in
 
-[interfaces/UseUpdateDocParams.ts:11](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/interfaces/UseUpdateDocParams.ts#L11)
+[interfaces/UseUpdateDocParams.ts:16](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/interfaces/UseUpdateDocParams.ts#L16)
 
 ***
 
@@ -35,4 +35,4 @@
 
 #### Defined in
 
-[interfaces/UseUpdateDocParams.ts:10](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/interfaces/UseUpdateDocParams.ts#L10)
+[interfaces/UseUpdateDocParams.ts:15](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/interfaces/UseUpdateDocParams.ts#L15)

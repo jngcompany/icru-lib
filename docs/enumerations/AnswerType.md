@@ -18,7 +18,7 @@ Enum for AnswerType (답변 유형)
 
 #### Defined in
 
-[enums/AnswerType.ts:17](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/enums/AnswerType.ts#L17)
+[enums/AnswerType.ts:17](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/enums/AnswerType.ts#L17)
 
 ***
 
@@ -30,7 +30,7 @@ Enum for AnswerType (답변 유형)
 
 #### Defined in
 
-[enums/AnswerType.ts:18](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/enums/AnswerType.ts#L18)
+[enums/AnswerType.ts:18](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/enums/AnswerType.ts#L18)
 
 ***
 
@@ -42,7 +42,7 @@ Enum for AnswerType (답변 유형)
 
 #### Defined in
 
-[enums/AnswerType.ts:16](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/enums/AnswerType.ts#L16)
+[enums/AnswerType.ts:16](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/enums/AnswerType.ts#L16)
 
 ***
 
@@ -54,4 +54,4 @@ Enum for AnswerType (답변 유형)
 
 #### Defined in
 
-[enums/AnswerType.ts:15](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/enums/AnswerType.ts#L15)
+[enums/AnswerType.ts:15](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/enums/AnswerType.ts#L15)

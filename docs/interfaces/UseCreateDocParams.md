@@ -43,7 +43,7 @@
 
 #### Defined in
 
-[interfaces/UseCreateDocParams.ts:15](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/interfaces/UseCreateDocParams.ts#L15)
+[interfaces/UseCreateDocParams.ts:20](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/interfaces/UseCreateDocParams.ts#L20)
 
 ***
 
@@ -53,7 +53,7 @@
 
 #### Defined in
 
-[interfaces/UseCreateDocParams.ts:14](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/interfaces/UseCreateDocParams.ts#L14)
+[interfaces/UseCreateDocParams.ts:19](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/interfaces/UseCreateDocParams.ts#L19)
 
 ***
 
@@ -63,4 +63,4 @@
 
 #### Defined in
 
-[interfaces/UseCreateDocParams.ts:13](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/interfaces/UseCreateDocParams.ts#L13)
+[interfaces/UseCreateDocParams.ts:18](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/interfaces/UseCreateDocParams.ts#L18)

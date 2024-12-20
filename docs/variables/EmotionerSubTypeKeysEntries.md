@@ -16,4 +16,4 @@ EmotionerSubType 객체의 키에서 파생된 엔트리 배열
 
 ## Defined in
 
-[enums/DiagnosisCase.ts:180](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/enums/DiagnosisCase.ts#L180)
+[enums/DiagnosisCase.ts:180](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/enums/DiagnosisCase.ts#L180)

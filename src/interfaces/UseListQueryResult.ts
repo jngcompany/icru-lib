@@ -1,3 +1,8 @@
+/*
+ * SPDX-FileCopyrightText: © 2024, 주식회사 지음과깃듬 <jngcompany.co.kr | asanobm@outlook.com>
+ * SPDX-License-Identifier: UNLICENSED
+ */
+
 /**
  * 리스트 쿼리 훅의 결과 인터페이스
  * @interface UseListQueryResult

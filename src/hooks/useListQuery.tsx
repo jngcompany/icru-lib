@@ -1,10 +1,23 @@
-import { collection, getCountFromServer, getDocs, limit, query, startAfter, where, WhereFilterOp } from "firebase/firestore"
-import { Firestore } from "firebase/firestore"
-import { useCallback, useEffect } from "react"
-import { useState } from "react"
-import { Doc } from "src/interfaces"
-import { UseListQueryParams } from "src/interfaces/UseListQueryParams"
-import { UseListQueryResult } from "src/interfaces/UseListQueryResult"
+/*
+ * SPDX-FileCopyrightText: © 2024, 주식회사 지음과깃듬 <jngcompany.co.kr | asanobm@outlook.com>
+ * SPDX-License-Identifier: UNLICENSED
+ */
+
+import {
+  collection,
+  Firestore,
+  getCountFromServer,
+  getDocs,
+  limit,
+  query,
+  startAfter,
+  where,
+  WhereFilterOp
+} from "firebase/firestore"
+import {useCallback, useEffect, useState} from "react"
+import {Doc} from "../interfaces"
+import {UseListQueryParams} from "../interfaces/UseListQueryParams"
+import {UseListQueryResult} from "../interfaces/UseListQueryResult"
 
 /**
  * 리스트 쿼리 훅

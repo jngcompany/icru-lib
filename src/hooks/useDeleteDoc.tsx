@@ -1,9 +1,14 @@
-import {  doc, Firestore, Timestamp, updateDoc } from "firebase/firestore"
+/*
+ * SPDX-FileCopyrightText: © 2024, 주식회사 지음과깃듬 <jngcompany.co.kr | asanobm@outlook.com>
+ * SPDX-License-Identifier: UNLICENSED
+ */
 
-import { useMutation, UseMutationResult, useQueryClient } from "@tanstack/react-query"
-import { Doc } from "src/interfaces/Doc"
-import { UseDeleteDocParams } from "src/interfaces/UseDeleteDocParams"
-import { useEffect } from "react"
+import {doc, Firestore, Timestamp, updateDoc} from "firebase/firestore"
+
+import {useMutation, UseMutationResult, useQueryClient} from "@tanstack/react-query"
+import {Doc} from "../interfaces/Doc"
+import {UseDeleteDocParams} from "../interfaces/UseDeleteDocParams"
+import {useEffect} from "react"
 
 /**
  * 문서 삭제를 위한 커스텀 훅

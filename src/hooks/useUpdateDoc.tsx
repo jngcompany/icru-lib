@@ -1,11 +1,13 @@
-import { UseUpdateDocParams } from "src/interfaces/UseUpdateDocParams"
-import { UseMutationResult } from "@tanstack/react-query"
-import { Doc } from "src/interfaces"
-import { useMutation } from "@tanstack/react-query"
-import { useQueryClient } from "@tanstack/react-query"
-import { updateDoc, doc, Timestamp } from "firebase/firestore"
-import { Firestore } from "firebase/firestore"
-import { useEffect } from "react"
+/*
+ * SPDX-FileCopyrightText: © 2024, 주식회사 지음과깃듬 <jngcompany.co.kr | asanobm@outlook.com>
+ * SPDX-License-Identifier: UNLICENSED
+ */
+
+import {UseUpdateDocParams} from "../interfaces/UseUpdateDocParams"
+import {useMutation, UseMutationResult, useQueryClient} from "@tanstack/react-query"
+import {Doc} from "../interfaces/Doc"
+import {doc, Firestore, Timestamp, updateDoc} from "firebase/firestore"
+import {useEffect} from "react"
 
 /**
  * 문서 업데이트 훅

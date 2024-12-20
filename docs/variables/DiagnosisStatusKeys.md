@@ -14,4 +14,4 @@ DiagnosisStatus 객체의 키를 문자열 배열로 캐스팅한 배열입니�
 
 ## Defined in
 
-[enums/DiagnosisStatus.ts:31](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/enums/DiagnosisStatus.ts#L31)
+[enums/DiagnosisStatus.ts:31](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/enums/DiagnosisStatus.ts#L31)

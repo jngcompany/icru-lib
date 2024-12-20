@@ -1,6 +1,11 @@
-import { Collections } from "src/enums/Collections";
+/*
+ * SPDX-FileCopyrightText: © 2024, 주식회사 지음과깃듬 <jngcompany.co.kr | asanobm@outlook.com>
+ * SPDX-License-Identifier: UNLICENSED
+ */
 
-import { Doc } from "./Doc";
+import {Collections} from "../enums/Collections";
+
+import {Doc} from "./Doc";
 
 /**
  * 문서 생성을 위한 파라미터

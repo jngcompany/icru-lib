@@ -3,16 +3,12 @@
  * SPDX-License-Identifier: UNLICENSED
  */
 
-import { UseQueryResult } from '@tanstack/react-query'
+import {useQuery, UseQueryResult} from '@tanstack/react-query'
 
-import { Doc } from '../interfaces/Doc'
-import { useQuery } from '@tanstack/react-query'
-import { doc } from 'firebase/firestore'
-import { getDoc } from 'firebase/firestore'
-import { Firestore } from 'firebase/firestore';
-import { UseDocParams } from 'src/interfaces/UseDocParams'
-import { useEffect } from 'react'
-
+import {Doc} from '../interfaces/Doc'
+import {doc, Firestore, getDoc} from 'firebase/firestore'
+import {UseDocParams} from '../interfaces/UseDocParams'
+import {useEffect} from 'react'
 
 
 /**

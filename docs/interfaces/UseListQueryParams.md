@@ -41,7 +41,7 @@
 
 #### Defined in
 
-[interfaces/UseListQueryParams.ts:18](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/interfaces/UseListQueryParams.ts#L18)
+[interfaces/UseListQueryParams.ts:23](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/interfaces/UseListQueryParams.ts#L23)
 
 ***
 
@@ -51,7 +51,7 @@
 
 #### Defined in
 
-[interfaces/UseListQueryParams.ts:20](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/interfaces/UseListQueryParams.ts#L20)
+[interfaces/UseListQueryParams.ts:25](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/interfaces/UseListQueryParams.ts#L25)
 
 ***
 
@@ -61,7 +61,7 @@
 
 #### Defined in
 
-[interfaces/UseListQueryParams.ts:17](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/interfaces/UseListQueryParams.ts#L17)
+[interfaces/UseListQueryParams.ts:22](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/interfaces/UseListQueryParams.ts#L22)
 
 ***
 
@@ -71,7 +71,7 @@
 
 #### Defined in
 
-[interfaces/UseListQueryParams.ts:15](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/interfaces/UseListQueryParams.ts#L15)
+[interfaces/UseListQueryParams.ts:20](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/interfaces/UseListQueryParams.ts#L20)
 
 ***
 
@@ -81,7 +81,7 @@
 
 #### Defined in
 
-[interfaces/UseListQueryParams.ts:16](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/interfaces/UseListQueryParams.ts#L16)
+[interfaces/UseListQueryParams.ts:21](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/interfaces/UseListQueryParams.ts#L21)
 
 ***
 
@@ -103,4 +103,4 @@
 
 #### Defined in
 
-[interfaces/UseListQueryParams.ts:19](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/interfaces/UseListQueryParams.ts#L19)
+[interfaces/UseListQueryParams.ts:24](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/interfaces/UseListQueryParams.ts#L24)

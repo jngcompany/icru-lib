@@ -44,4 +44,4 @@ const { items, page, pages, total, error, fetch } = useListQuery({ name: Collect
 
 ## Defined in
 
-[hooks/useListQuery.tsx:18](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/hooks/useListQuery.tsx#L18)
+[hooks/useListQuery.tsx:31](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/hooks/useListQuery.tsx#L31)
