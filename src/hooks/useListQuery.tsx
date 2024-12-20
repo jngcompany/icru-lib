@@ -88,9 +88,10 @@ export function useListQuery<T extends Doc<T>>(params: UseListQueryParams, fires
         setLastVisible(snapshot.docs[snapshot.docs.length - 1])
         setItems(docs)
 
-        // 추가: 더 이상 문서가 없으면 fetch 중지
+        // 추가: 더 이상 문서가 없으면 fetch 중지하고 null 반환
         if (snapshot.docs.length === 0) {
           console.log('No more documents to load')
+          setItems([])
           return
         }
       } catch (err) {
