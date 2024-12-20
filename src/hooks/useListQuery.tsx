@@ -87,11 +87,16 @@ export function useListQuery<T extends Doc<T>>(params: UseListQueryParams, fires
         // 마지막으로 불러온 문서와 결과 데이터 설정
         setLastVisible(snapshot.docs[snapshot.docs.length - 1])
         setItems(docs)
+
+        // 추가: 더 이상 문서가 없으면 fetch 중지
+        if (snapshot.docs.length === 0) {
+          console.log('No more documents to load')
+          return
+        }
       } catch (err) {
         // 에러 처리
         setError(err as Error)
         console.error('Error fetching list:', err)
-      } finally {
       }
     },
     [page, params.name, params.size, params.fields, lastVisible]

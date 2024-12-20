@@ -23,6 +23,7 @@ export interface UserAnswer {
  * 진단 정보를 나타내는 인터페이스
  * @interface Diagnosis
  * @property {string} userId - 사용자 ID
+ * @property {boolean} isAnonymous - 익명 여부
  * @property {string} userDisplayName - 사용자 표시 이름
  * @property {Gender} userGender - 사용자 성별
  * @property {number} userBirthYear - 사용자 출생년도
@@ -36,6 +37,7 @@ export interface UserAnswer {
  */
 export interface Diagnosis {
   userId: string
+  isAnonymous: boolean
   userDisplayName: string
   userGender: Gender
   userBirthYear: number
