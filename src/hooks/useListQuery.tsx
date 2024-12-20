@@ -9,11 +9,11 @@ import { UseListQueryResult } from "src/interfaces/UseListQueryResult"
 /**
  * 리스트 쿼리 훅
  * @template T 리스트 아이템의 타입
- * @param {Object} params - 리스트 쿼리 파라미터
- * @param {string} params.name - 컬렉션 이름
- * @param {number} params.size - 페이지 크기
- * @param {string[]} params.fields - 필드 목록
+ * @param {UseListQueryParams} params - 리스트 쿼리 파라미터
+ * @param {Firestore} firestore - Firestore 인스턴스
  * @returns {UseListQueryResult<T>} 리스트 쿼리 결과
+ * @example
+ * const { items, page, pages, total, error, fetch } = useListQuery({ name: Collections.USERS, size: 10, fields: ['name', 'email'], where: [{ field: 'status', operator: '==', value: 'active' }], deleted: false }, firestore)
  */
 export function useListQuery<T extends Doc<T>>(params: UseListQueryParams, firestore: Firestore): UseListQueryResult<T> {
   // 리스트 아이템 배열

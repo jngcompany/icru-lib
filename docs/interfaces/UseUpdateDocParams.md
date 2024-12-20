@@ -13,7 +13,21 @@
 
 {Collections} - 컬렉션 이름
 
+## Param
+
+{boolean} - 쿼리 활성 여부
+
 ## Properties
+
+### enabled?
+
+> `optional` **enabled**: `boolean`
+
+#### Defined in
+
+[interfaces/UseUpdateDocParams.ts:11](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/interfaces/UseUpdateDocParams.ts#L11)
+
+***
 
 ### name
 
@@ -21,4 +35,4 @@
 
 #### Defined in
 
-[interfaces/UseUpdateDocParams.ts:9](https://github.com/jngcompany/icru-lib/blob/256d6a1256b31526527eaee4aeab346b456a87aa/src/interfaces/UseUpdateDocParams.ts#L9)
+[interfaces/UseUpdateDocParams.ts:10](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/interfaces/UseUpdateDocParams.ts#L10)

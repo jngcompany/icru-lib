@@ -11,6 +11,18 @@
 
 ## Properties
 
+### enabled?
+
+> `optional` **enabled**: `boolean`
+
+쿼리 활성 여부
+
+#### Defined in
+
+[interfaces/UseDocParams.ts:13](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/interfaces/UseDocParams.ts#L13)
+
+***
+
 ### id
 
 > **id**: `string`
@@ -19,7 +31,7 @@
 
 #### Defined in
 
-[interfaces/UseDocParams.ts:13](https://github.com/jngcompany/icru-lib/blob/256d6a1256b31526527eaee4aeab346b456a87aa/src/interfaces/UseDocParams.ts#L13)
+[interfaces/UseDocParams.ts:12](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/interfaces/UseDocParams.ts#L12)
 
 ***
 
@@ -31,4 +43,4 @@
 
 #### Defined in
 
-[interfaces/UseDocParams.ts:11](https://github.com/jngcompany/icru-lib/blob/256d6a1256b31526527eaee4aeab346b456a87aa/src/interfaces/UseDocParams.ts#L11)
+[interfaces/UseDocParams.ts:11](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/interfaces/UseDocParams.ts#L11)

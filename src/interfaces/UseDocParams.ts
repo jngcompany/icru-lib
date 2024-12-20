@@ -5,10 +5,10 @@ import { Collections } from "src/enums/Collections";
  * @interface UseDocParams
  * @property {Collections} name - 컬렉션 이름
  * @property {string} id - 문서 ID
+ * @property {boolean} enabled - 쿼리 활성 여부
  */
 export interface UseDocParams {
-  /** 컬렉션 이름 */
   name: Collections;
-  /** 문서 ID */
   id: string;
+  enabled?: boolean;
 }

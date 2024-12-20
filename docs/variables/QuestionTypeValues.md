@@ -14,4 +14,4 @@
 
 ## Defined in
 
-[enums/QuestionType.ts:22](https://github.com/jngcompany/icru-lib/blob/256d6a1256b31526527eaee4aeab346b456a87aa/src/enums/QuestionType.ts#L22)
+[enums/QuestionType.ts:22](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/enums/QuestionType.ts#L22)

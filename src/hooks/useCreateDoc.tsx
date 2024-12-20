@@ -4,6 +4,7 @@ import { useMutation, UseMutationResult, useQueryClient } from "@tanstack/react-
 import { Firestore } from "firebase/firestore"
 import { Doc } from "src/interfaces/Doc"
 import { UseCreateDocParams } from "src/interfaces/UseCreateDocParams"
+import { useEffect } from "react"
 
 /**
  * 제품 생성을 위한 커스텀 훅
@@ -18,13 +19,12 @@ import { UseCreateDocParams } from "src/interfaces/UseCreateDocParams"
 export function useCreateDoc<T>(params: UseCreateDocParams<T>, firestore: Firestore): UseMutationResult<Doc<T>, Error, T> {
   const queryClient = useQueryClient()
 
+  // 쿼리 활성 여부 확인
+  useEffect(() => {
+    if (params.enabled === false) return;
+  }, [params.enabled]);
+
   return useMutation<Doc<T>, Error, T>({
-    /**
-     * 제품을 생성하는 함수
-     *
-     * @param input - 제품 생성에 필요한 데이터
-     * @returns 생성된 제품 정보
-     */
     mutationFn: async (input: T) => {
       if (!firestore) throw new Error('Firestore is not initialized')
       const now = Timestamp.now()

@@ -28,12 +28,20 @@
 
 `Firestore`
 
+Firestore 인스턴스
+
 ## Returns
 
 [`UseListQueryResult`](../interfaces/UseListQueryResult.md)\<`T`\>
 
 리스트 쿼리 결과
 
+## Example
+
+```ts
+const { items, page, pages, total, error, fetch } = useListQuery({ name: Collections.USERS, size: 10, fields: ['name', 'email'], where: [{ field: 'status', operator: '==', value: 'active' }], deleted: false }, firestore)
+```
+
 ## Defined in
 
-[hooks/useListQuery.tsx:18](https://github.com/jngcompany/icru-lib/blob/256d6a1256b31526527eaee4aeab346b456a87aa/src/hooks/useListQuery.tsx#L18)
+[hooks/useListQuery.tsx:18](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/hooks/useListQuery.tsx#L18)

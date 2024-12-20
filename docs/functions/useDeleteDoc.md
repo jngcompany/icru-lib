@@ -47,4 +47,4 @@ mutate('productId')
 
 ## Defined in
 
-[hooks/useDeleteDoc.tsx:17](https://github.com/jngcompany/icru-lib/blob/256d6a1256b31526527eaee4aeab346b456a87aa/src/hooks/useDeleteDoc.tsx#L17)
+[hooks/useDeleteDoc.tsx:18](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/hooks/useDeleteDoc.tsx#L18)

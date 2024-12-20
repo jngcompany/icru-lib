@@ -3,6 +3,7 @@ import {  doc, Firestore, Timestamp, updateDoc } from "firebase/firestore"
 import { useMutation, UseMutationResult, useQueryClient } from "@tanstack/react-query"
 import { Doc } from "src/interfaces/Doc"
 import { UseDeleteDocParams } from "src/interfaces/UseDeleteDocParams"
+import { useEffect } from "react"
 
 /**
  * 문서 삭제를 위한 커스텀 훅
@@ -17,13 +18,12 @@ import { UseDeleteDocParams } from "src/interfaces/UseDeleteDocParams"
 export function useDeleteDoc<T>(params: UseDeleteDocParams, firestore: Firestore): UseMutationResult<Doc<T>, Error, string> {
   const queryClient = useQueryClient()
 
+  // 쿼리 활성 여부 확인
+  useEffect(() => {
+    if (params.enabled === false) return;
+  }, [params.enabled]);
+
   return useMutation<Doc<T>, Error, string>({
-    /**
-     * 문서를 소프트 삭제하는 함수
-     *
-     * @param input - 삭제할 문서 데이터
-     * @returns 삭제된 문서 정보
-     */
     mutationFn: async (id: string) => {
       if (!firestore) throw new Error('Firestore is not initialized')
       await updateDoc(doc(firestore, params.name, id), {

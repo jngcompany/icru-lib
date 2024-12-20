@@ -11,6 +11,7 @@ import { doc } from 'firebase/firestore'
 import { getDoc } from 'firebase/firestore'
 import { Firestore } from 'firebase/firestore';
 import { UseDocParams } from 'src/interfaces/UseDocParams'
+import { useEffect } from 'react'
 
 
 
@@ -22,14 +23,13 @@ import { UseDocParams } from 'src/interfaces/UseDocParams'
  * @returns UseQueryResult - 문서 조회 쿼리 결과
  */
 export function useDoc<T>(params: UseDocParams, firestore: Firestore): UseQueryResult<Doc<T>, Error> {
+  // 쿼리 활성 여부 확인
+  useEffect(() => {
+    if (params.enabled === false) return;
+  }, [params.enabled]);
+
   return useQuery<Doc<T>, Error>({
     queryKey: [params.name, params.id],
-    /**
-     * 문서를 조회하는 함수
-     *
-     * @returns 조회된 문서 데이터
-     * @throws Firestore가 초기화되지 않았거나 문서가 존재하지 않는 경우 에러
-     */
     queryFn: async () => {
       const docRef = doc(firestore, params.name, params.id)
       const docSnap = await getDoc(docRef)

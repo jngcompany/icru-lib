@@ -45,4 +45,4 @@ mutate({ id: '123', name: 'John Doe' })
 
 ## Defined in
 
-[hooks/useUpdateDoc.tsx:19](https://github.com/jngcompany/icru-lib/blob/256d6a1256b31526527eaee4aeab346b456a87aa/src/hooks/useUpdateDoc.tsx#L19)
+[hooks/useUpdateDoc.tsx:20](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/hooks/useUpdateDoc.tsx#L20)

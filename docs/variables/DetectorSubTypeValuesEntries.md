@@ -19,4 +19,4 @@ DetectorSubType 열거형의 값에서 파생된 키-값 쌍 배열
 
 ## Defined in
 
-[enums/DiagnosisCase.ts:287](https://github.com/jngcompany/icru-lib/blob/256d6a1256b31526527eaee4aeab346b456a87aa/src/enums/DiagnosisCase.ts#L287)
+[enums/DiagnosisCase.ts:287](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/enums/DiagnosisCase.ts#L287)

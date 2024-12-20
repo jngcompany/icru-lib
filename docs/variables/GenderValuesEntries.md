@@ -19,4 +19,4 @@ Gender 열거형의 값에서 파생된 키-값 쌍 배열
 
 ## Defined in
 
-[enums/Gender.ts:65](https://github.com/jngcompany/icru-lib/blob/256d6a1256b31526527eaee4aeab346b456a87aa/src/enums/Gender.ts#L65)
+[enums/Gender.ts:65](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/enums/Gender.ts#L65)

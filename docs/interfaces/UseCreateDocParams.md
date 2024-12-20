@@ -15,6 +15,10 @@
 
 ## Param
 
+{boolean} - 쿼리 활성 여부
+
+## Param
+
 {Function} - 문서 생성 후 호출될 콜백 함수
 
 ## Type Parameters
@@ -39,7 +43,17 @@
 
 #### Defined in
 
-[interfaces/UseCreateDocParams.ts:13](https://github.com/jngcompany/icru-lib/blob/256d6a1256b31526527eaee4aeab346b456a87aa/src/interfaces/UseCreateDocParams.ts#L13)
+[interfaces/UseCreateDocParams.ts:15](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/interfaces/UseCreateDocParams.ts#L15)
+
+***
+
+### enabled?
+
+> `optional` **enabled**: `boolean`
+
+#### Defined in
+
+[interfaces/UseCreateDocParams.ts:14](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/interfaces/UseCreateDocParams.ts#L14)
 
 ***
 
@@ -49,4 +63,4 @@
 
 #### Defined in
 
-[interfaces/UseCreateDocParams.ts:12](https://github.com/jngcompany/icru-lib/blob/256d6a1256b31526527eaee4aeab346b456a87aa/src/interfaces/UseCreateDocParams.ts#L12)
+[interfaces/UseCreateDocParams.ts:13](https://github.com/jngcompany/icru-lib/blob/cee5a8006a4970de6269ef7414374f6c7339529e/src/interfaces/UseCreateDocParams.ts#L13)
