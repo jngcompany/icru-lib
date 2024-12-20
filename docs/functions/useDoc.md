@@ -36,4 +36,4 @@ UseQueryResult - 문서 조회 쿼리 결과
 
 ## Defined in
 
-[hooks/useDoc.tsx:21](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/hooks/useDoc.tsx#L21)
+[hooks/useDoc.tsx:21](https://github.com/jngcompany/icru-lib/blob/463893065235bd00666c18bdf483558e3b5f75c6/src/hooks/useDoc.tsx#L21)

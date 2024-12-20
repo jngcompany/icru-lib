@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[enums/DiagnosisStatus.ts:17](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/enums/DiagnosisStatus.ts#L17)
+[enums/DiagnosisStatus.ts:17](https://github.com/jngcompany/icru-lib/blob/463893065235bd00666c18bdf483558e3b5f75c6/src/enums/DiagnosisStatus.ts#L17)
 
 ***
 
@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[enums/DiagnosisStatus.ts:16](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/enums/DiagnosisStatus.ts#L16)
+[enums/DiagnosisStatus.ts:16](https://github.com/jngcompany/icru-lib/blob/463893065235bd00666c18bdf483558e3b5f75c6/src/enums/DiagnosisStatus.ts#L16)
 
 ***
 
@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[enums/DiagnosisStatus.ts:15](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/enums/DiagnosisStatus.ts#L15)
+[enums/DiagnosisStatus.ts:15](https://github.com/jngcompany/icru-lib/blob/463893065235bd00666c18bdf483558e3b5f75c6/src/enums/DiagnosisStatus.ts#L15)
 
 ***
 
@@ -54,4 +54,4 @@
 
 #### Defined in
 
-[enums/DiagnosisStatus.ts:18](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/enums/DiagnosisStatus.ts#L18)
+[enums/DiagnosisStatus.ts:18](https://github.com/jngcompany/icru-lib/blob/463893065235bd00666c18bdf483558e3b5f75c6/src/enums/DiagnosisStatus.ts#L18)

@@ -23,17 +23,27 @@
 
 ## Interfaces
 
+- [Diagnosis](interfaces/Diagnosis.md)
 - [Doc](interfaces/Doc.md)
+- [Payment](interfaces/Payment.md)
+- [Product](interfaces/Product.md)
+- [PurchaseHistory](interfaces/PurchaseHistory.md)
+- [SaleStrategy](interfaces/SaleStrategy.md)
+- [Subscription](interfaces/Subscription.md)
 - [UseCreateDocParams](interfaces/UseCreateDocParams.md)
 - [UseDeleteDocParams](interfaces/UseDeleteDocParams.md)
 - [UseDocParams](interfaces/UseDocParams.md)
 - [UseListQueryParams](interfaces/UseListQueryParams.md)
 - [UseListQueryResult](interfaces/UseListQueryResult.md)
+- [UserAnswer](interfaces/UserAnswer.md)
 - [UseUpdateDocParams](interfaces/UseUpdateDocParams.md)
 
 ## Type Aliases
 
+- [Answer](type-aliases/Answer.md)
 - [DiagnosisCase](type-aliases/DiagnosisCase.md)
+- [Question](type-aliases/Question.md)
+- [User](type-aliases/User.md)
 
 ## Variables
 
@@ -69,6 +79,8 @@
 - [MainTypeKeysEntries](variables/MainTypeKeysEntries.md)
 - [MainTypeValues](variables/MainTypeValues.md)
 - [MainTypeValuesEntries](variables/MainTypeValuesEntries.md)
+- [PAYMENT\_COLLECTION](variables/PAYMENT_COLLECTION.md)
+- [PRODUCT\_COLLECTION](variables/PRODUCT_COLLECTION.md)
 - [ProductTargetEntries](variables/ProductTargetEntries.md)
 - [ProductTargetKeys](variables/ProductTargetKeys.md)
 - [ProductTargetKeysEntries](variables/ProductTargetKeysEntries.md)
@@ -79,6 +91,7 @@
 - [ProductTypeKeysEntries](variables/ProductTypeKeysEntries.md)
 - [ProductTypeValues](variables/ProductTypeValues.md)
 - [ProductTypeValuesEntries](variables/ProductTypeValuesEntries.md)
+- [PURCHASE\_HISTORY\_COLLECTION](variables/PURCHASE_HISTORY_COLLECTION.md)
 - [QuestionTypeEntries](variables/QuestionTypeEntries.md)
 - [QuestionTypeKeys](variables/QuestionTypeKeys.md)
 - [QuestionTypeKeysEntries](variables/QuestionTypeKeysEntries.md)
@@ -89,6 +102,7 @@
 - [RevolutionerSubTypeKeysEntries](variables/RevolutionerSubTypeKeysEntries.md)
 - [RevolutionerSubTypeValues](variables/RevolutionerSubTypeValues.md)
 - [RevolutionerSubTypeValuesEntries](variables/RevolutionerSubTypeValuesEntries.md)
+- [SUBSCRIPTION\_COLLECTION](variables/SUBSCRIPTION_COLLECTION.md)
 - [UserTypeEntries](variables/UserTypeEntries.md)
 - [UserTypeKeys](variables/UserTypeKeys.md)
 - [UserTypeKeysEntries](variables/UserTypeKeysEntries.md)

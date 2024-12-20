@@ -16,4 +16,4 @@ ProductTarget 객체의 키-값 쌍 배열
 
 ## Defined in
 
-[enums/ProductTarget.ts:37](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/enums/ProductTarget.ts#L37)
+[enums/ProductTarget.ts:37](https://github.com/jngcompany/icru-lib/blob/463893065235bd00666c18bdf483558e3b5f75c6/src/enums/ProductTarget.ts#L37)

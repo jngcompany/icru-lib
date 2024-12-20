@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[interfaces/UseDocParams.ts:18](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/interfaces/UseDocParams.ts#L18)
+[interfaces/UseDocParams.ts:18](https://github.com/jngcompany/icru-lib/blob/463893065235bd00666c18bdf483558e3b5f75c6/src/interfaces/UseDocParams.ts#L18)
 
 ***
 
@@ -31,7 +31,7 @@
 
 #### Defined in
 
-[interfaces/UseDocParams.ts:17](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/interfaces/UseDocParams.ts#L17)
+[interfaces/UseDocParams.ts:17](https://github.com/jngcompany/icru-lib/blob/463893065235bd00666c18bdf483558e3b5f75c6/src/interfaces/UseDocParams.ts#L17)
 
 ***
 
@@ -43,4 +43,4 @@
 
 #### Defined in
 
-[interfaces/UseDocParams.ts:16](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/interfaces/UseDocParams.ts#L16)
+[interfaces/UseDocParams.ts:16](https://github.com/jngcompany/icru-lib/blob/463893065235bd00666c18bdf483558e3b5f75c6/src/interfaces/UseDocParams.ts#L16)

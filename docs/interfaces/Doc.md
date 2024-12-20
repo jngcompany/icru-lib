@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[interfaces/Doc.ts:10](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/interfaces/Doc.ts#L10)
+[interfaces/Doc.ts:10](https://github.com/jngcompany/icru-lib/blob/463893065235bd00666c18bdf483558e3b5f75c6/src/interfaces/Doc.ts#L10)
 
 ***
 
@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[interfaces/Doc.ts:12](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/interfaces/Doc.ts#L12)
+[interfaces/Doc.ts:12](https://github.com/jngcompany/icru-lib/blob/463893065235bd00666c18bdf483558e3b5f75c6/src/interfaces/Doc.ts#L12)
 
 ***
 
@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[interfaces/Doc.ts:9](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/interfaces/Doc.ts#L9)
+[interfaces/Doc.ts:9](https://github.com/jngcompany/icru-lib/blob/463893065235bd00666c18bdf483558e3b5f75c6/src/interfaces/Doc.ts#L9)
 
 ***
 
@@ -52,4 +52,4 @@
 
 #### Defined in
 
-[interfaces/Doc.ts:11](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/interfaces/Doc.ts#L11)
+[interfaces/Doc.ts:11](https://github.com/jngcompany/icru-lib/blob/463893065235bd00666c18bdf483558e3b5f75c6/src/interfaces/Doc.ts#L11)

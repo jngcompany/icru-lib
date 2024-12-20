@@ -47,4 +47,4 @@ mutate({ name: 'Product 1', price: 1000, stock: 10 })
 
 ## Defined in
 
-[hooks/useCreateDoc.tsx:23](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/hooks/useCreateDoc.tsx#L23)
+[hooks/useCreateDoc.tsx:23](https://github.com/jngcompany/icru-lib/blob/463893065235bd00666c18bdf483558e3b5f75c6/src/hooks/useCreateDoc.tsx#L23)

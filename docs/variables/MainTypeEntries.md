@@ -16,4 +16,4 @@ MainType 객체의 키-값 쌍 배열
 
 ## Defined in
 
-[enums/DiagnosisCase.ts:40](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/enums/DiagnosisCase.ts#L40)
+[enums/DiagnosisCase.ts:40](https://github.com/jngcompany/icru-lib/blob/463893065235bd00666c18bdf483558e3b5f75c6/src/enums/DiagnosisCase.ts#L40)

@@ -22,4 +22,4 @@
 
 ## Defined in
 
-[enums/DiagnosisCase.ts:301](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/enums/DiagnosisCase.ts#L301)
+[enums/DiagnosisCase.ts:301](https://github.com/jngcompany/icru-lib/blob/463893065235bd00666c18bdf483558e3b5f75c6/src/enums/DiagnosisCase.ts#L301)

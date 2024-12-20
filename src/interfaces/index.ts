@@ -3,10 +3,20 @@
  * SPDX-License-Identifier: UNLICENSED
  */
 
+/** Domain */
 export * from './Doc'
+export * from './Answer'
+export * from './Diagnosis'
+export * from './Product'
+export * from './Question'
+export * from './User'
+
+/** Hooks Params */
+export * from './UseDocParams'
 export * from './UseCreateDocParams'
 export * from './UseDeleteDocParams'
-export * from './UseDocParams'
 export * from './UseListQueryParams'
-export * from './UseListQueryResult'
 export * from './UseUpdateDocParams'
+
+/** Hooks Result */
+export * from './UseListQueryResult'

@@ -25,7 +25,7 @@
 
 #### Defined in
 
-[interfaces/UseDeleteDocParams.ts:16](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/interfaces/UseDeleteDocParams.ts#L16)
+[interfaces/UseDeleteDocParams.ts:16](https://github.com/jngcompany/icru-lib/blob/463893065235bd00666c18bdf483558e3b5f75c6/src/interfaces/UseDeleteDocParams.ts#L16)
 
 ***
 
@@ -35,4 +35,4 @@
 
 #### Defined in
 
-[interfaces/UseDeleteDocParams.ts:15](https://github.com/jngcompany/icru-lib/blob/761e262af29fb19aea42bf1fcdb824ee624d8160/src/interfaces/UseDeleteDocParams.ts#L15)
+[interfaces/UseDeleteDocParams.ts:15](https://github.com/jngcompany/icru-lib/blob/463893065235bd00666c18bdf483558e3b5f75c6/src/interfaces/UseDeleteDocParams.ts#L15)
