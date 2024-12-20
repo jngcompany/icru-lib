@@ -1,0 +1,101 @@
+[**@jngcompany/icru-lib**](README.md)
+
+***
+
+# @jngcompany/icru-lib
+
+## Enumerations
+
+- [ActionerSubType](enumerations/ActionerSubType.md)
+- [AnswerType](enumerations/AnswerType.md)
+- [Collections](enumerations/Collections.md)
+- [Country](enumerations/Country.md)
+- [DetectorSubType](enumerations/DetectorSubType.md)
+- [DiagnosisStatus](enumerations/DiagnosisStatus.md)
+- [EmotionerSubType](enumerations/EmotionerSubType.md)
+- [Gender](enumerations/Gender.md)
+- [MainType](enumerations/MainType.md)
+- [ProductTarget](enumerations/ProductTarget.md)
+- [ProductType](enumerations/ProductType.md)
+- [QuestionType](enumerations/QuestionType.md)
+- [RevolutionerSubType](enumerations/RevolutionerSubType.md)
+- [UserType](enumerations/UserType.md)
+
+## Interfaces
+
+- [Doc](interfaces/Doc.md)
+- [UseCreateDocParams](interfaces/UseCreateDocParams.md)
+- [UseDeleteDocParams](interfaces/UseDeleteDocParams.md)
+- [UseDocParams](interfaces/UseDocParams.md)
+- [UseListQueryParams](interfaces/UseListQueryParams.md)
+- [UseListQueryResult](interfaces/UseListQueryResult.md)
+- [UseUpdateDocParams](interfaces/UseUpdateDocParams.md)
+
+## Type Aliases
+
+- [DiagnosisCase](type-aliases/DiagnosisCase.md)
+
+## Variables
+
+- [ActionerSubTypeEntries](variables/ActionerSubTypeEntries.md)
+- [ActionerSubTypeKeys](variables/ActionerSubTypeKeys.md)
+- [ActionerSubTypeKeysEntries](variables/ActionerSubTypeKeysEntries.md)
+- [ActionerSubTypeValues](variables/ActionerSubTypeValues.md)
+- [ActionerSubTypeValuesEntries](variables/ActionerSubTypeValuesEntries.md)
+- [AnswerTypeList](variables/AnswerTypeList.md)
+- [DetectorSubTypeEntries](variables/DetectorSubTypeEntries.md)
+- [DetectorSubTypeKeys](variables/DetectorSubTypeKeys.md)
+- [DetectorSubTypeKeysEntries](variables/DetectorSubTypeKeysEntries.md)
+- [DetectorSubTypeValues](variables/DetectorSubTypeValues.md)
+- [DetectorSubTypeValuesEntries](variables/DetectorSubTypeValuesEntries.md)
+- [DiagnosisStatusEntries](variables/DiagnosisStatusEntries.md)
+- [DiagnosisStatusKeys](variables/DiagnosisStatusKeys.md)
+- [DiagnosisStatusKeysEntries](variables/DiagnosisStatusKeysEntries.md)
+- [DiagnosisStatusValues](variables/DiagnosisStatusValues.md)
+- [DiagnosisStatusValuesEntries](variables/DiagnosisStatusValuesEntries.md)
+- [EmotionerSubTypeEntries](variables/EmotionerSubTypeEntries.md)
+- [EmotionerSubTypeKeys](variables/EmotionerSubTypeKeys.md)
+- [EmotionerSubTypeKeysEntries](variables/EmotionerSubTypeKeysEntries.md)
+- [EmotionerSubTypeValues](variables/EmotionerSubTypeValues.md)
+- [EmotionerSubTypeValuesEntries](variables/EmotionerSubTypeValuesEntries.md)
+- [GenderEntries](variables/GenderEntries.md)
+- [GenderKeys](variables/GenderKeys.md)
+- [GenderKeysEntries](variables/GenderKeysEntries.md)
+- [genderOptions](variables/genderOptions.md)
+- [GenderValues](variables/GenderValues.md)
+- [GenderValuesEntries](variables/GenderValuesEntries.md)
+- [MainTypeEntries](variables/MainTypeEntries.md)
+- [MainTypeKeys](variables/MainTypeKeys.md)
+- [MainTypeKeysEntries](variables/MainTypeKeysEntries.md)
+- [MainTypeValues](variables/MainTypeValues.md)
+- [MainTypeValuesEntries](variables/MainTypeValuesEntries.md)
+- [ProductTargetEntries](variables/ProductTargetEntries.md)
+- [ProductTargetKeys](variables/ProductTargetKeys.md)
+- [ProductTargetKeysEntries](variables/ProductTargetKeysEntries.md)
+- [ProductTargetValues](variables/ProductTargetValues.md)
+- [ProductTargetValuesEntries](variables/ProductTargetValuesEntries.md)
+- [ProductTypeEntries](variables/ProductTypeEntries.md)
+- [ProductTypeKeys](variables/ProductTypeKeys.md)
+- [ProductTypeKeysEntries](variables/ProductTypeKeysEntries.md)
+- [ProductTypeValues](variables/ProductTypeValues.md)
+- [ProductTypeValuesEntries](variables/ProductTypeValuesEntries.md)
+- [QuestionTypeEntries](variables/QuestionTypeEntries.md)
+- [QuestionTypeKeys](variables/QuestionTypeKeys.md)
+- [QuestionTypeKeysEntries](variables/QuestionTypeKeysEntries.md)
+- [QuestionTypeValues](variables/QuestionTypeValues.md)
+- [QuestionTypeValuesEntries](variables/QuestionTypeValuesEntries.md)
+- [RevolutionerSubTypeEntries](variables/RevolutionerSubTypeEntries.md)
+- [RevolutionerSubTypeKeys](variables/RevolutionerSubTypeKeys.md)
+- [RevolutionerSubTypeKeysEntries](variables/RevolutionerSubTypeKeysEntries.md)
+- [RevolutionerSubTypeValues](variables/RevolutionerSubTypeValues.md)
+- [RevolutionerSubTypeValuesEntries](variables/RevolutionerSubTypeValuesEntries.md)
+- [UserTypeEntries](variables/UserTypeEntries.md)
+- [UserTypeKeys](variables/UserTypeKeys.md)
+- [UserTypeKeysEntries](variables/UserTypeKeysEntries.md)
+- [UserTypeValues](variables/UserTypeValues.md)
+- [UserTypeValuesEntries](variables/UserTypeValuesEntries.md)
+
+## Functions
+
+- [getSubTypeByMain](functions/getSubTypeByMain.md)
+- [useDoc](functions/useDoc.md)

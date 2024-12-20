@@ -1,22 +1,50 @@
 {
-  "name": "icru-common-library",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "@jngcompany/icru-lib",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "license": "UNLICENSED",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite",
-    "preview": "vite preview"
+    "build": "tsc",
+    "docs": "typedoc --out docs --plugin typedoc-plugin-markdown src/index.ts",
+    "prepublishOnly": "npm run build"
   },
-  "dependencies": {
-    "@tanstack/react-query": "^5.62.8",
-    "firebase": "^11.1.0",
-    "firebase-admin": "^13.0.2",
-    "react": "^19.0.0"
+  "peerDependencies": {
+    "@tanstack/react-query": "^5.0.0",
+    "firebase": "^11.0.0",
+    "firebase-admin": "^13.0.0",
+    "react": "^18.0.0"
   },
   "devDependencies": {
-    "@types/react": "^19.0.2",
+    "@tanstack/react-query": "^5.62.8",
+    "@types/react": "^18.2.0",
+    "firebase": "^11.1.0",
+    "firebase-admin": "^13.0.2",
     "prettier": "^3.3.1",
+    "react": "^18.2.0",
+    "typedoc": "^0.27.5",
+    "typedoc-plugin-markdown": "^4.3.3",
     "typescript": "^5.2.2"
+  },
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "exports": {
+    "./enums": {
+      "types": "./dist/enums/index.d.ts",
+      "default": "./dist/enums/index.js"
+    },
+    "./interfaces": {
+      "types": "./dist/interfaces/index.d.ts",
+      "default": "./dist/interfaces/index.js"
+    },
+    "./hooks": {
+      "types": "./dist/hooks/index.d.ts",
+      "default": "./dist/hooks/index.js"
+    }
   }
 }

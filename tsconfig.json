@@ -1,21 +1,20 @@
 {
   "compilerOptions": {
-    "outDir": "./dist", // 번들 결과물 위치
     "module": "ES6",    // 모듈 시스템
     "target": "ES6",    // 최신 ES6 이상을 지원
     "declaration": true, // 타입 파일 생성
     "declarationMap": true,
     "moduleResolution": "node",
-    "paths": {
-      "@/*": ["./src/*"]
-    },
-
+    "rootDir": "./src",
+    "baseUrl": ".",
+    "outDir": "./dist",
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+    "jsx": "react"
   },
-  "include": ["src"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
 }

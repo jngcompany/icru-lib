@@ -1,33 +1,27 @@
+/*
+ * SPDX-FileCopyrightText: © 2024, 주식회사 지음과깃듬 <jngcompany.co.kr | asanobm@outlook.com>
+ * SPDX-License-Identifier: UNLICENSED
+ */
+
 import { UseQueryResult } from '@tanstack/react-query'
 
-import { Doc } from '@/domain/Doc'
+import { Doc } from '../interfaces/Doc'
 import { useQuery } from '@tanstack/react-query'
 import { doc } from 'firebase/firestore'
-
 import { getDoc } from 'firebase/firestore'
-import {Collections} from "@/enums/Collections";
 import { Firestore } from 'firebase/firestore';
+import { UseDocParams } from 'src/interfaces/UseDocParams'
 
 
-
-/**
- * 문서 조회에 필요한 입력 타입
- */
-export interface UseDocParams {
-  /** 컬렉션 이름 */
-  name: Collections
-  /** 문서 ID */
-  id: string
-}
 
 /**
  * 단일 문서 조회를 위한 커스텀 훅
  *
  * @param params - 컬렉션 이름과 문서 ID를 포함한 파라미터
- * @param firestore
+ * @param firestore - Firestore 인스턴스
  * @returns UseQueryResult - 문서 조회 쿼리 결과
  */
-export default function useDoc<T>(params: UseDocParams, firestore: Firestore): UseQueryResult<Doc<T>, Error> {
+export function useDoc<T>(params: UseDocParams, firestore: Firestore): UseQueryResult<Doc<T>, Error> {
   return useQuery<Doc<T>, Error>({
     queryKey: [params.name, params.id],
     /**

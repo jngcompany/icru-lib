@@ -1,0 +1,36 @@
+name: Publish to GitHub Packages
+
+on:
+  push:
+    branches:
+      - main # 메인 브랜치에서 푸시될 때만 실행
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. 리포지토리 클론
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 2. Node.js 설치
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20' # 원하는 Node.js 버전
+          registry-url: https://registry.npmjs.org/
+
+      # 3. 의존성 설치
+      - name: Install dependencies
+        run: npm install
+
+      # 4. TypeScript 컴파일
+      - name: Build the project
+        run: npm run build
+
+      # 5. package.json의 버전 확인 및 GitHub Packages로 배포
+      - name: Publish to GitHub Packages
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub 인증 토큰, 자동으로 설정됨
+        run: npm publish --access private # GitHub Packages로 배포
