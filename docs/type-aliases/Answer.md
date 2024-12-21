@@ -30,4 +30,4 @@
 
 ## Defined in
 
-interfaces/Answer.ts:13
+[interfaces/Answer.ts:18](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/interfaces/Answer.ts#L18)

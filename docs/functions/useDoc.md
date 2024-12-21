@@ -6,7 +6,7 @@
 
 # Function: useDoc()
 
-> **useDoc**\<`T`\>(`params`, `firestore`): `UseQueryResult`\<[`Doc`](../interfaces/Doc.md)\<`T`\>, `Error`\>
+> **useDoc**\<`T`\>(`params`, `firestore`): `UseQueryResult`\<[`Doc`](../interfaces/Doc.md)\<`T`\> \| `null`, `Error`\>
 
 단일 문서 조회를 위한 커스텀 훅
 
@@ -30,10 +30,10 @@ Firestore 인스턴스
 
 ## Returns
 
-`UseQueryResult`\<[`Doc`](../interfaces/Doc.md)\<`T`\>, `Error`\>
+`UseQueryResult`\<[`Doc`](../interfaces/Doc.md)\<`T`\> \| `null`, `Error`\>
 
 UseQueryResult - 문서 조회 쿼리 결과
 
 ## Defined in
 
-[hooks/useDoc.tsx:21](https://github.com/jngcompany/icru-lib/blob/463893065235bd00666c18bdf483558e3b5f75c6/src/hooks/useDoc.tsx#L21)
+[hooks/useDoc.tsx:21](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/hooks/useDoc.tsx#L21)

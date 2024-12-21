@@ -19,7 +19,7 @@
 
 #### Defined in
 
-interfaces/Diagnosis.ts:48
+[interfaces/Diagnosis.ts:55](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/interfaces/Diagnosis.ts#L55)
 
 ***
 
@@ -31,7 +31,7 @@ interfaces/Diagnosis.ts:48
 
 #### Defined in
 
-interfaces/Diagnosis.ts:43
+[interfaces/Diagnosis.ts:50](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/interfaces/Diagnosis.ts#L50)
 
 ***
 
@@ -43,7 +43,19 @@ interfaces/Diagnosis.ts:43
 
 #### Defined in
 
-interfaces/Diagnosis.ts:42
+[interfaces/Diagnosis.ts:49](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/interfaces/Diagnosis.ts#L49)
+
+***
+
+### isAnonymous
+
+> **isAnonymous**: `boolean`
+
+익명 여부
+
+#### Defined in
+
+[interfaces/Diagnosis.ts:45](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/interfaces/Diagnosis.ts#L45)
 
 ***
 
@@ -55,7 +67,7 @@ interfaces/Diagnosis.ts:42
 
 #### Defined in
 
-interfaces/Diagnosis.ts:44
+[interfaces/Diagnosis.ts:51](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/interfaces/Diagnosis.ts#L51)
 
 ***
 
@@ -67,7 +79,7 @@ interfaces/Diagnosis.ts:44
 
 #### Defined in
 
-interfaces/Diagnosis.ts:45
+[interfaces/Diagnosis.ts:52](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/interfaces/Diagnosis.ts#L52)
 
 ***
 
@@ -79,7 +91,7 @@ interfaces/Diagnosis.ts:45
 
 #### Defined in
 
-interfaces/Diagnosis.ts:47
+[interfaces/Diagnosis.ts:54](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/interfaces/Diagnosis.ts#L54)
 
 ***
 
@@ -91,7 +103,7 @@ interfaces/Diagnosis.ts:47
 
 #### Defined in
 
-interfaces/Diagnosis.ts:46
+[interfaces/Diagnosis.ts:53](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/interfaces/Diagnosis.ts#L53)
 
 ***
 
@@ -103,7 +115,7 @@ interfaces/Diagnosis.ts:46
 
 #### Defined in
 
-interfaces/Diagnosis.ts:41
+[interfaces/Diagnosis.ts:48](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/interfaces/Diagnosis.ts#L48)
 
 ***
 
@@ -115,7 +127,7 @@ interfaces/Diagnosis.ts:41
 
 #### Defined in
 
-interfaces/Diagnosis.ts:39
+[interfaces/Diagnosis.ts:46](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/interfaces/Diagnosis.ts#L46)
 
 ***
 
@@ -127,7 +139,7 @@ interfaces/Diagnosis.ts:39
 
 #### Defined in
 
-interfaces/Diagnosis.ts:40
+[interfaces/Diagnosis.ts:47](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/interfaces/Diagnosis.ts#L47)
 
 ***
 
@@ -139,4 +151,4 @@ interfaces/Diagnosis.ts:40
 
 #### Defined in
 
-interfaces/Diagnosis.ts:38
+[interfaces/Diagnosis.ts:44](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/interfaces/Diagnosis.ts#L44)

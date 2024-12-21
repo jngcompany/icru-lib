@@ -19,4 +19,4 @@ UserType 열거형의 값에서 파생된 키-값 쌍 배열
 
 ## Defined in
 
-[enums/UserType.ts:53](https://github.com/jngcompany/icru-lib/blob/463893065235bd00666c18bdf483558e3b5f75c6/src/enums/UserType.ts#L53)
+[enums/UserType.ts:53](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/enums/UserType.ts#L53)

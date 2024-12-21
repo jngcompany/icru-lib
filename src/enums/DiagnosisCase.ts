@@ -12,10 +12,10 @@
  * @property {string} DETECTOR - 분석가
  */
 export enum MainType {
-  REVOLUTIONER = 'REVOLUTIONER',
-  EMOTIONER = 'EMOTIONER',
-  ACTIONER = 'ACTIONER',
-  DETECTOR = 'DETECTOR',
+  REVOLUTIONER = 'REVOLUTIONER', // 창조가 (revolutioner)
+  EMOTIONER = 'EMOTIONER', // 상담가 (emotioner)
+  ACTIONER = 'ACTIONER', // 행동가 (actioner)
+  DETECTOR = 'DETECTOR', // 분석가 (detector)
 }
 
 /**

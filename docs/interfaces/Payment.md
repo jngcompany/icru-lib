@@ -20,7 +20,7 @@
 
 #### Defined in
 
-interfaces/Product.ts:97
+[interfaces/Product.ts:102](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/interfaces/Product.ts#L102)
 
 ***
 
@@ -32,7 +32,7 @@ interfaces/Product.ts:97
 
 #### Defined in
 
-interfaces/Product.ts:95
+[interfaces/Product.ts:100](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/interfaces/Product.ts#L100)
 
 ***
 
@@ -44,7 +44,7 @@ interfaces/Product.ts:95
 
 #### Defined in
 
-interfaces/Product.ts:99
+[interfaces/Product.ts:104](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/interfaces/Product.ts#L104)
 
 ***
 
@@ -56,7 +56,7 @@ interfaces/Product.ts:99
 
 #### Defined in
 
-interfaces/Product.ts:98
+[interfaces/Product.ts:103](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/interfaces/Product.ts#L103)
 
 ***
 
@@ -68,4 +68,4 @@ interfaces/Product.ts:98
 
 #### Defined in
 
-interfaces/Product.ts:96
+[interfaces/Product.ts:101](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/interfaces/Product.ts#L101)

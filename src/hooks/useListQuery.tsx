@@ -12,145 +12,211 @@ import {
   query,
   startAfter,
   where,
-  WhereFilterOp
+  WhereFilterOp,
+  Query,
+  DocumentData,
 } from "firebase/firestore"
 import {useCallback, useEffect, useState} from "react"
 import {Doc} from "../interfaces"
-import {UseListQueryParams} from "../interfaces/UseListQueryParams"
-import {UseListQueryResult} from "../interfaces/UseListQueryResult"
+import {UseListQueryParams, UseListQueryResult} from "../interfaces"
 
 /**
- * 리스트 쿼리 훅
- * @template T 리스트 아이템의 타입
- * @param {UseListQueryParams} params - 리스트 쿼리 파라미터
- * @param {Firestore} firestore - Firestore 인스턴스
- * @returns {UseListQueryResult<T>} 리스트 쿼리 결과
- * @example
- * const { items, page, pages, total, error, fetch } = useListQuery({ name: Collections.USERS, size: 10, fields: ['name', 'email'], where: [{ field: 'status', operator: '==', value: 'active' }], deleted: false }, firestore)
+ * Firestore 쿼리 참조를 생성하는 내부 유틸리티 함수
+ * @internal
+ * @param firestore - Firestore 인스턴스
+ * @param params - 쿼리 파라미터
+ * @param page - 현재 페이지 번호
+ * @param lastVisible - 마지막으로 로드된 문서 (페이지네이션용)
+ * @returns Firestore 쿼리 객체
  */
-export function useListQuery<T extends Doc<T>>(params: UseListQueryParams, firestore: Firestore): UseListQueryResult<T> {
-  // 리스트 아이템 배열
-  const [items, setItems] = useState<T[]>([])
-  // 현재 페이지 번호
-  const [page, setPage] = useState(0)
-  // 전체 페이지 수
-  const [pages, setPages] = useState(0)
-  // 전체 아이템 수
-  const [total, setTotal] = useState(0)
-  // 에러 상태
-  const [error, setError] = useState<Error | null>(null)
-  // 마지막으로 불러온 문서 (페이지네이션용)
-  const [lastVisible, setLastVisible] = useState<any>(null)
+const createQueryRef = (
+  firestore: Firestore,
+  params: UseListQueryParams,
+  page: number,
+  lastVisible: DocumentData | null
+): Query => {
+  const collectionRef = collection(firestore, params.name)
+  const baseQuery = query(collectionRef, limit(params.size))
+  const whereConditions = [
+    ...(params.where?.map(({ field, operator, value }) => 
+      where(field, operator as WhereFilterOp, value)) || []),
+    ...(params.deleted !== undefined 
+      ? [where('deletedAt', params.deleted ? '!=' : '==', null)]
+      : [])
+  ]
 
-  /**
-   * 페이지별 데이터를 가져오는 콜백 함수
-   * @param {Object} params - 페이지 파라미터
-   * @param {number} params.page - 현재 페이지 번호
-   */
+  if (whereConditions.length === 0) {
+    return page === 0 ? baseQuery : query(baseQuery, startAfter(lastVisible))
+  }
+
+  return page === 0
+    ? query(baseQuery, ...whereConditions)
+    : query(baseQuery, startAfter(lastVisible), ...whereConditions)
+}
+
+/**
+ * Firestore 문서 데이터를 필터링하는 내부 유틸리티 함수
+ * @internal
+ * @template T - 문서 타입
+ * @param doc - Firestore 문서 데이터
+ * @param fields - 필터링할 필드 목록
+ * @returns 필터링된 문서 데이터
+ */
+const filterDocumentData = <T extends Doc<T>>(
+  doc: DocumentData,
+  fields?: string[]
+): T => {
+  const data = doc.data()
+  const filteredData = { id: doc.id } as Record<string, unknown>
+
+  if (fields) {
+    fields.forEach(field => {
+      if (data[field] !== undefined) {
+        filteredData[field] = data[field]
+      }
+    })
+  } else {
+    Object.assign(filteredData, data)
+  }
+
+  return filteredData as T
+}
+
+/**
+ * Firestore 컬렉션에서 페이지네이션된 데이터를 조회하는 React 훅
+ * 
+ * @template T - 문서 타입 (Doc 인터페이스를 확장해야 함)
+ * @param params - 쿼리 파라미터
+ * @param firestore - Firestore 인스턴스
+ * 
+ * @returns UseListQueryResult 객체
+ * - items: 현재 페이지의 문서 목록
+ * - page: 현재 페이지 번호
+ * - pages: 전체 페이지 수
+ * - total: 전체 문서 수
+ * - error: 에러 객체 (있는 경우)
+ * - fetch: 데이터를 다시 불러오는 함수
+ * 
+ * @example
+ * ```typescript
+ * // 사용자 인터페이스 정의
+ * interface User extends Doc<User> {
+ *   name: string;
+ *   email: string;
+ *   status: 'active' | 'inactive';
+ * }
+ * 
+ * // 훅 사용 예시
+ * function UserList() {
+ *   const { items, page, pages, total, error, fetch } = useListQuery<User>({
+ *     name: 'users',
+ *     size: 10,
+ *     fields: ['name', 'email', 'status'],
+ *     where: [
+ *       { field: 'status', operator: '==', value: 'active' }
+ *     ],
+ *     deleted: false,
+ *     enabled: true
+ *   }, firestore);
+ * 
+ *   // 에러 처리
+ *   if (error) {
+ *     return <div>Error: {error.message}</div>;
+ *   }
+ * 
+ *   // 데이터 렌더링
+ *   return (
+ *     <div>
+ *       <h2>Users ({total})</h2>
+ *       <ul>
+ *         {items.map(user => (
+ *           <li key={user.id}>{user.name} - {user.email}</li>
+ *         ))}
+ *       </ul>
+ *       <div>
+ *         Page {page + 1} of {pages}
+ *         <button onClick={() => fetch({ page: page - 1 })} disabled={page === 0}>
+ *           Previous
+ *         </button>
+ *         <button onClick={() => fetch({ page: page + 1 })} disabled={page >= pages - 1}>
+ *           Next
+ *         </button>
+ *       </div>
+ *     </div>
+ *   );
+ * }
+ * ```
+ */
+export function useListQuery<T extends Doc<T>>(
+  params: UseListQueryParams,
+  firestore: Firestore
+): UseListQueryResult<T> {
+  const [state, setState] = useState<{
+    items: T[]
+    page: number
+    pages: number
+    total: number
+    error: Error | null
+    lastVisible: DocumentData | null
+  }>({
+    items: [],
+    page: 0,
+    pages: 0,
+    total: 0,
+    error: null,
+    lastVisible: null
+  })
+
   const fetch = useCallback(
     async ({ page }: { page: number }) => {
       if (!firestore) return
+
       try {
-        // Firestore 쿼리 참조 가져오기
-        const queryRef = getQueryRef(firestore)
+        const queryRef = createQueryRef(firestore, params, page, state.lastVisible)
+        const [snapshot, countSnapshot] = await Promise.all([
+          getDocs(queryRef),
+          getCountFromServer(collection(firestore, params.name))
+        ])
 
-        // 쿼리 실행하여 스냅샷 가져오기
-        const snapshot = await getDocs(queryRef)
-
-        // 문서 데이터 매핑
-        const docs = snapshot.docs.map(doc => {
-          const data = doc.data()
-          const filteredData: any = { id: doc.id }
-
-          // 지정된 필드만 필터링하여 데이터 추출
-          if (params.fields) {
-            params.fields.forEach(field => {
-              if (data[field] !== undefined) {
-                filteredData[field] = data[field]
-              }
-            })
-          }
-          return filteredData as T
-        })
-
-        // 전체 문서 수 가져오기
-        const countSnapshot = await getCountFromServer(collection(firestore, params.name))
-        const totalCount = countSnapshot.data().count
-
-        // 전체 개수와 페이지 수 설정
-        setTotal(totalCount)
-        // 현재 페이지 번호 설정
-        setPage(page)
-        // 전체 페이지 수 설정
-        setPages(Math.ceil(totalCount / params.size))
-
-        // 마지막으로 불러온 문서와 결과 데이터 설정
-        setLastVisible(snapshot.docs[snapshot.docs.length - 1])
-        setItems(docs)
-
-        // 추가: 더 이상 문서가 없으면 fetch 중지하고 null 반환
-        if (snapshot.docs.length === 0) {
+        if (snapshot.empty) {
+          setState(prev => ({ ...prev, items: [], error: null }))
           console.log('No more documents to load')
-          setItems([])
           return
         }
+
+        const docs = snapshot.docs.map(doc => filterDocumentData<T>(doc, params.fields))
+        const totalCount = countSnapshot.data().count
+
+        setState({
+          items: docs,
+          page,
+          pages: Math.ceil(totalCount / params.size),
+          total: totalCount,
+          error: null,
+          lastVisible: snapshot.docs[snapshot.docs.length - 1]
+        })
       } catch (err) {
-        // 에러 처리
-        setError(err as Error)
         console.error('Error fetching list:', err)
+        setState(prev => ({
+          ...prev,
+          error: err instanceof Error ? err : new Error('Unknown error occurred')
+        }))
       }
     },
-    [page, params.name, params.size, params.fields, lastVisible]
+    [firestore, params, state.lastVisible]
   )
 
   useEffect(() => {
     if (params.enabled === false) return
-    fetch({ page })
-  }, [page, params.enabled, fetch])
-
-  /**
-   * Firestore 쿼리 참조를 생성하는 함수
-   * @param {Firestore} firestore - Firestore 인스턴스
-   * @returns {Query} Firestore 쿼리 참조
-   */
-  const getQueryRef = (firestore: Firestore) => {
-    // 기본 쿼리: 컬렉션과 페이지 크기 제한 설정
-    const baseQuery = query(collection(firestore, params.name), limit(params.size))
-
-    // where 조건들을 배열로 변환
-    let whereConditions =
-      params.where?.map(({ field, operator, value }) => where(field, operator as WhereFilterOp, value)) || []
-
-    // 삭제된 문서 필터링을 위한 deletedAt 조건 추가
-    if (params.deleted !== undefined) {
-      whereConditions.push(where('deletedAt', params.deleted ? '!=' : '==', null))
-    }
-
-    // where 조건이 있는 경우
-    if (whereConditions.length) {
-      if (page === 0) {
-        // 첫 페이지: 기본 쿼리 + where 조건
-        return query(baseQuery, ...whereConditions)
-      }
-      // 다음 페이지: 기본 쿼리 + 마지막 문서 이후부터 + where 조건
-      return query(baseQuery, startAfter(lastVisible), ...whereConditions)
-    }
-
-    // where 조건이 없는 경우
-    if (page === 0) {
-      // 첫 페이지: 기본 쿼리만
-      return baseQuery
-    }
-    // 다음 페이지: 기본 쿼리 + 마지막 문서 이후부터
-    return query(baseQuery, startAfter(lastVisible))
-  }
+    fetch({ page: state.page })
+  }, [state.page, params.enabled, fetch])
 
   return {
-    items,
-    page,
-    pages,
-    total,
-    error,
+    items: state.items,
+    page: state.page,
+    pages: state.pages,
+    total: state.total,
+    error: state.error,
     fetch
   }
 }

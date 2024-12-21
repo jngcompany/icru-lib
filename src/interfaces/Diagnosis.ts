@@ -1,5 +1,10 @@
-import { Gender } from '../enums/Gender'
-import { DiagnosisStatus } from '../enums/DiagnosisStatus'
+/*
+ * SPDX-FileCopyrightText: © 2024, 주식회사 지음과깃듬 <jngcompany.co.kr | asanobm@outlook.com>
+ * SPDX-License-Identifier: UNLICENSED
+ */
+
+import { Gender } from '../enums'
+import { DiagnosisStatus } from '../enums'
 import { Question } from './Question'
 import { Doc } from './Doc'
 

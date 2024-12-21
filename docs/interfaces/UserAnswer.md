@@ -17,7 +17,7 @@
 
 #### Defined in
 
-interfaces/Diagnosis.ts:13
+[interfaces/Diagnosis.ts:18](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/interfaces/Diagnosis.ts#L18)
 
 ***
 
@@ -45,4 +45,4 @@ interfaces/Diagnosis.ts:13
 
 #### Defined in
 
-interfaces/Diagnosis.ts:14
+[interfaces/Diagnosis.ts:19](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/interfaces/Diagnosis.ts#L19)

@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[enums/Collections.ts:19](https://github.com/jngcompany/icru-lib/blob/463893065235bd00666c18bdf483558e3b5f75c6/src/enums/Collections.ts#L19)
+[enums/Collections.ts:19](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/enums/Collections.ts#L19)
 
 ***
 
@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[enums/Collections.ts:20](https://github.com/jngcompany/icru-lib/blob/463893065235bd00666c18bdf483558e3b5f75c6/src/enums/Collections.ts#L20)
+[enums/Collections.ts:20](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/enums/Collections.ts#L20)
 
 ***
 
@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[enums/Collections.ts:17](https://github.com/jngcompany/icru-lib/blob/463893065235bd00666c18bdf483558e3b5f75c6/src/enums/Collections.ts#L17)
+[enums/Collections.ts:17](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/enums/Collections.ts#L17)
 
 ***
 
@@ -54,7 +54,7 @@
 
 #### Defined in
 
-[enums/Collections.ts:18](https://github.com/jngcompany/icru-lib/blob/463893065235bd00666c18bdf483558e3b5f75c6/src/enums/Collections.ts#L18)
+[enums/Collections.ts:18](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/enums/Collections.ts#L18)
 
 ***
 
@@ -66,4 +66,4 @@
 
 #### Defined in
 
-[enums/Collections.ts:16](https://github.com/jngcompany/icru-lib/blob/463893065235bd00666c18bdf483558e3b5f75c6/src/enums/Collections.ts#L16)
+[enums/Collections.ts:16](https://github.com/jngcompany/icru-lib/blob/d5809ceca7cec295ab2df61cd05dc96c0f11bd66/src/enums/Collections.ts#L16)
