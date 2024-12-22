@@ -65,14 +65,14 @@ export const MainTypeKeysEntries = Object.keys(MainType).map(key => [key, key]) 
  * 창조가(Revolutioner)의 서브타입을 나타내는 열거형입니다.
  * @enum {string}
  * @property {string} ORIGINAL - 오리지널
- * @property {string} GUIDE - 안내자
- * @property {string} GAMBLER - 승부사
+ * @property {string} SHERPA - 안내자
+ * @property {string} MAVERICK - 승부사
  * @property {string} ARTISAN - 장인
  */
 export enum RevolutionerSubType {
   ORIGINAL = 'ORIGINAL',
-  GUIDE = 'GUIDE',
-  GAMBLER = 'GAMBLER',
+  SHERPA = 'SHERPA',
+  MAVERICK = 'MAVERICK',
   ARTISAN = 'ARTISAN',
 }
 
