@@ -308,6 +308,71 @@ export type DiagnosisCase = {
 };
 
 /**
+ * 최종 타입의 짧은 이름을 가져오는 함수입니다.
+ * @param diagnosisCase - 진단 결과
+ * @returns 최종 타입의 짧은 이름
+ */
+export const getFinalTypeShortName = (diagnosisCase: DiagnosisCase): string => {
+  switch (diagnosisCase.mainType) {
+    case MainType.REVOLUTIONER:
+      switch (diagnosisCase.subType) {
+        case RevolutionerSubType.REVOLUTIONER:
+          return 'R';
+        case RevolutionerSubType.SHERPA:
+          return 'RE';
+        case RevolutionerSubType.MAVERICK:
+          return 'RA';
+        case RevolutionerSubType.ARTISAN:
+          return 'RD';
+        default:
+          return 'R';
+      }
+    case MainType.EMOTIONER:
+      switch (diagnosisCase.subType) {
+        case EmotionerSubType.EMOTIONER:
+          return 'E';
+        case EmotionerSubType.CATALYST:
+          return 'ER';
+        case EmotionerSubType.SPOKESPERSON:
+          return 'EA';
+        case EmotionerSubType.ORCHESTRATOR:
+          return 'ED';
+        default:
+          return 'E';
+      }
+    case MainType.ACTIONER:
+      switch (diagnosisCase.subType) {
+        case ActionerSubType.ACTIONER:
+          return 'A';
+        case ActionerSubType.INNOVATOR:
+          return 'AR';
+        case ActionerSubType.KINGPIN:
+          return 'AE';
+        case ActionerSubType.GUARDIAN:
+          return 'AD';
+        default:
+          return 'A';
+      }
+    case MainType.DETECTOR:
+      switch (diagnosisCase.subType) {
+        case DetectorSubType.DETECTOR:
+          return 'D';
+        case DetectorSubType.RENOVATOR:
+          return 'DR';
+        case DetectorSubType.COORDINATOR:
+          return 'DE';
+        case DetectorSubType.DEVELOPER:
+          return 'DA';
+        default:
+          return 'D';
+      }
+    default:
+      return '';
+  }
+}
+
+
+/**
  * 메인 타입에 따른 서브타입을 가져오는 타입 가드입니다.
  */
 export const getSubTypeByMain = (mainType: MainType) => {
