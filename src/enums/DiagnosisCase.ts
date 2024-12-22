@@ -64,13 +64,13 @@ export const MainTypeKeysEntries = Object.keys(MainType).map(key => [key, key]) 
 /**
  * 창조가(Revolutioner)의 서브타입을 나타내는 열거형입니다.
  * @enum {string}
- * @property {string} ORIGINAL - 오리지널
+ * @property {string} REVOLUTIONER - 오리지널
  * @property {string} SHERPA - 안내자
  * @property {string} MAVERICK - 승부사
  * @property {string} ARTISAN - 장인
  */
 export enum RevolutionerSubType {
-  ORIGINAL = 'ORIGINAL',
+  REVOLUTIONER = 'REVOLUTIONER',
   SHERPA = 'SHERPA',
   MAVERICK = 'MAVERICK',
   ARTISAN = 'ARTISAN',
@@ -124,13 +124,13 @@ export const RevolutionerSubTypeKeysEntries = Object.keys(RevolutionerSubType).m
 /**
  * 상담가(Emotioner)의 서브타입을 나타내는 열거형입니다.
  * @enum {string}
- * @property {string} ORIGINAL - 오리지널
+ * @property {string} EMOTIONER - 오리지널
  * @property {string} CATALYST - 촉진자
  * @property {string} SPOKESPERSON - 대변인
  * @property {string} ORCHESTRATOR - 조직자
  */
 export enum EmotionerSubType {
-  ORIGINAL = 'ORIGINAL',
+  EMOTIONER = 'EMOTIONER',
   CATALYST = 'CATALYST',
   SPOKESPERSON = 'SPOKESPERSON',
   ORCHESTRATOR = 'ORCHESTRATOR',
@@ -182,13 +182,13 @@ export const EmotionerSubTypeKeysEntries = Object.keys(EmotionerSubType).map(key
 /**
  * 행동가(Actioner)의 서브타입을 나타내는 열거형입니다.
  * @enum {string}
- * @property {string} ORIGINAL - 오리지널
+ * @property {string} ACTIONER - 오리지널
  * @property {string} INNOVATOR - 혁명가
  * @property {string} KINGPIN - 선도자
  * @property {string} GUARDIAN - 보호자
  */
 export enum ActionerSubType {
-  ORIGINAL = 'ORIGINAL',
+  ACTIONER = 'ACTIONER',
   INNOVATOR = 'INNOVATOR',
   KINGPIN = 'KINGPIN',
   GUARDIAN = 'GUARDIAN',
@@ -240,13 +240,13 @@ export const ActionerSubTypeKeysEntries = Object.keys(ActionerSubType).map(key =
 /**
  * 분석가(Detector)의 서브타입을 나타내는 열거형입니다.
  * @enum {string}
- * @property {string} ORIGINAL - 오리지널
+ * @property {string} DETECTOR - 오리지널
  * @property {string} RENOVATOR - 쇄신가
  * @property {string} COORDINATOR - 조정자
  * @property {string} DEVELOPER - 개발자
  */
 export enum DetectorSubType {
-  ORIGINAL = 'ORIGINAL',
+  DETECTOR = 'DETECTOR',
   RENOVATOR = 'RENOVATOR',
   COORDINATOR = 'COORDINATOR',
   DEVELOPER = 'DEVELOPER',
