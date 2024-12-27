@@ -3,7 +3,4 @@
  * SPDX-License-Identifier: UNLICENSED
  */
 
-export * from './interfaces';
-export * from './enums';
-export * from './hooks';
-export * from './utils';
+export * from './ICRUTypeCalculator';
