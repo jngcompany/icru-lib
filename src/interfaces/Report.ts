@@ -13,5 +13,6 @@ export interface Report {
   organizationId: string;
   debrieferId: string;
   downloadUrl: string;
+  progress: number;
   status: ReportStatus;
 }
