@@ -60,6 +60,7 @@ export interface UserAnswer {
 export interface Diagnosis {
   userId: string
   isAnonymous: boolean
+  isFirst: boolean
   userDisplayName: string
   userGender: Gender
   userBirthYear: number
