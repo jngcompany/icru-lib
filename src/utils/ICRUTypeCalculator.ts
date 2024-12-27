@@ -1,13 +1,9 @@
-/**
- * ICRU 메인 타입 열거형
- * 개인의 주요 성향을 나타내는 4가지 기본 타입
+/*
+ * SPDX-FileCopyrightText: © 2024, 주식회사 지음과깃듬 <jngcompany.co.kr | asanobm@outlook.com>
+ * SPDX-License-Identifier: UNLICENSED
  */
-export enum MainType {
-  REVOLUTIONER = 'REVOLUTIONER',
-  EMOTIONER = 'EMOTIONER',
-  ACTIONER = 'ACTIONER',
-  DETECTOR = 'DETECTOR'
-}
+
+import { MainType } from "../enums";
 
 /**
  * ICRU 서브 타입 열거형
