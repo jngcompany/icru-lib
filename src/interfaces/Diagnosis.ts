@@ -69,11 +69,20 @@ export interface Diagnosis {
   organizationId?: string | null
   organizationName?: string | null
   status: DiagnosisStatus
-  score: {
-    R: number
-    E: number
-    A: number
-    D: number
+  scores:
+    {
+      TEMPERAMENT: {
+        R: number
+        E: number
+        A: number
+        D: number
+      },
+      RESILIENCE: {
+        R: number
+        E: number
+        A: number
+        D: number
+      }
   }
   case: {
     mainType: MainType,
