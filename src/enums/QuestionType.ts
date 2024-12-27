@@ -6,11 +6,11 @@
 /**
  * 질문 유형 열거형
  * @enum {string}
- * @property {string} BASIC - 기본진단 문항
+ * @property {string} TEMPERAMENT - 기본진단 문항
  * @property {string} RESILIENCE - 회복탄력성 문항
  */
 export enum QuestionType {
-  BASIC = 'BASIC',
+  TEMPERAMENT = 'TEMPERAMENT',
   RESILIENCE = 'RESILIENCE'
 }
 
