@@ -17,5 +17,6 @@ export enum Collections {
   ORGANIZATIONS = 'organizations',
   PRODUCTS = 'products',
   DIAGNOSIS_QUESTIONS = 'diagnosisQuestions',
-  MAIL = 'mail'
+  MAIL = 'mail',
+  REPORTS = 'reports',
 }
