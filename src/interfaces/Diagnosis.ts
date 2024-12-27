@@ -3,7 +3,15 @@
  * SPDX-License-Identifier: UNLICENSED
  */
 
-import {ActionerSubType, DetectorSubType, EmotionerSubType, Gender, MainType, RevolutionerSubType} from '../enums'
+import {
+  ActionerSubType,
+  DetectorSubType,
+  EmotionerSubType,
+  Gender,
+  MainType,
+  QuestionType,
+  RevolutionerSubType
+} from '../enums'
 import { DiagnosisStatus } from '../enums'
 import { Question } from './Question'
 import { Doc } from './Doc'
@@ -16,6 +24,7 @@ import { Doc } from './Doc'
  */
 export interface UserAnswer {
   questionId: string
+  type: QuestionType
   selections: {
     R: number | boolean | null
     E: number | boolean | null
