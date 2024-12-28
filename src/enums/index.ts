@@ -13,3 +13,5 @@ export * from './ProductTarget';
 export * from './ProductType';
 export * from './QuestionType';
 export * from './UserType';
+export * from './ReportType';
+export * from './ReportStatus';
