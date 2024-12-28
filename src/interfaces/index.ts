@@ -10,6 +10,7 @@ export * from './Diagnosis'
 export * from './Product'
 export * from './Question'
 export * from './User'
+export * from './Report'
 
 /** Hooks Params */
 export * from './UseDocParams'

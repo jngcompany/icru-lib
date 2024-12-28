@@ -10,7 +10,6 @@ import {ReportStatus} from "../enums/ReportStatus";
 /**
  * 리포트 인터페이스
  * @interface Report
- * @property {string} id - 리포트의 고유 식별자
  * @property {string} userId - 리포트 소유자의 사용자 ID
  * @property {string} diagnosisId - 연관된 진단의 ID
  * @property {string} organizationId - 소속 조직의 ID
@@ -21,7 +20,6 @@ import {ReportStatus} from "../enums/ReportStatus";
  * @property {ReportStatus} status - 리포트 상태
  */
 export interface Report {
-  id: string;
   userId: string;
   diagnosisId: string;
   organizationId: string;
