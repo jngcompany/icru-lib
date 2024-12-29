@@ -11,9 +11,11 @@ import {Collections} from "../enums/Collections";
  * @property {Collections} name - 컬렉션 이름
  * @property {string} id - 문서 ID
  * @property {boolean} enabled - 쿼리 활성 여부
+ * @property {boolean} subscribe - 실시간 구독 여부
  */
 export interface UseDocParams {
   name: Collections;
   id: string;
   enabled?: boolean;
+  subscribe?: boolean;
 }
