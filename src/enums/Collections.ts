@@ -11,6 +11,8 @@
  * @property {string} PRODUCTS - 제품
  * @property {string} DIAGNOSIS_QUESTIONS - 진단 질문
  * @property {string} MAIL - 메일
+ * @property {string} REPORTS - 보고서
+ * @property {string} PROMOTIONS - 프로모션
  */
 export enum Collections {
   USER_DIAGNOSIS = 'userDiagnosis',
@@ -19,4 +21,5 @@ export enum Collections {
   DIAGNOSIS_QUESTIONS = 'diagnosisQuestions',
   MAIL = 'mail',
   REPORTS = 'reports',
+  PROMOTIONS = 'promotions',
 }
