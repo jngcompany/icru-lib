@@ -15,3 +15,4 @@ export * from './QuestionType';
 export * from './UserType';
 export * from './ReportType';
 export * from './ReportStatus';
+export * from './PromotionStatus';

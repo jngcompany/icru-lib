@@ -11,6 +11,7 @@ export * from './Product'
 export * from './Question'
 export * from './User'
 export * from './Report'
+export * from './Promotion'
 
 /** Hooks Params */
 export * from './UseDocParams'
