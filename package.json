@@ -1,6 +1,6 @@
 {
   "name": "@jngcompany/icru-lib",
-  "version": "0.0.36",
+  "version": "0.0.37",
   "main": "./dist/index.js",
   "license": "UNLICENSED",
   "types": "./dist/index.d.ts",
@@ -48,5 +48,8 @@
       "types": "./dist/utils/index.d.ts",
       "default": "./dist/utils/index.js"
     }
+  },
+  "dependencies": {
+    "@tosspayments/payment-sdk": "^1.9.1"
   }
 }
