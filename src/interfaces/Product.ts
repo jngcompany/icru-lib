@@ -6,11 +6,6 @@
 import { ProductType } from '../enums/ProductType'
 import { ProductTarget } from '../enums/ProductTarget'
 
-export const PRODUCT_COLLECTION = 'products'
-export const SUBSCRIPTION_COLLECTION = 'subscriptions'
-export const PURCHASE_HISTORY_COLLECTION = 'purchase_histories'
-export const PAYMENT_COLLECTION = 'payments'
-
 /**
  * @description 상품 정보를 나타내는 타입
  * @property {string} id - 상품 아이디
@@ -86,20 +81,4 @@ export interface PurchaseHistory {
   price: number
   usedCredit: boolean
   purchasedAt: Date
-}
-
-/**
- * @description 상품 결제 정보를 나타내는 타입
- * @property {string} id - 결제 아이디
- * @property {string} userId - 결제자 아이디
- * @property {number} amount - 결제 금액
- * @property {string} paymentMethod - 결제 방법
- * @property {Date} paidAt - 결제 일자
- */
-export interface Payment {
-  id?: string
-  userId: string
-  amount: number
-  paymentMethod: string
-  paidAt: Date
 }

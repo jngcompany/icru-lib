@@ -14,6 +14,8 @@
  * @property {string} REPORTS - 보고서
  * @property {string} PROMOTIONS - 프로모션
  * @property {string} PAYMENTS - 결제
+ * @property {string} SUBSCRIPTIONS - 구독
+ * @property {string} PURCHASE_HISTORIES - 구매 이력
  */
 export enum Collections {
   USER_DIAGNOSIS = 'userDiagnosis',
@@ -23,5 +25,7 @@ export enum Collections {
   MAIL = 'mail',
   REPORTS = 'reports',
   PROMOTIONS = 'promotions',
-  PAYMENTS = 'payments'
+  PAYMENTS = 'payments',
+  SUBSCRIPTIONS = 'subscriptions',
+  PURCHASE_HISTORIES = 'purchase_histories'
 }
