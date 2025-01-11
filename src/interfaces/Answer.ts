@@ -15,7 +15,8 @@ import { AnswerType } from '../enums/AnswerType'
  * @property {string} [deletedAt] - 답변이 삭제된 날짜와 시간입니다. 선택적 속성입니다.
  * @property {number} version - 답변의 버전입니다.
  */
-export type Answer = {
+export interface Answer {
+  id?: string
   text: {
     ko: string
     en: string
