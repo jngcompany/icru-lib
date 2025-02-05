@@ -1,6 +1,6 @@
 {
   "name": "@jngcompany/icru-lib",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "main": "./dist/index.js",
   "license": "UNLICENSED",
   "types": "./dist/index.d.ts",
@@ -27,22 +27,9 @@
     "registry": "https://npm.pkg.github.com"
   },
   "exports": {
-    "./enums": {
-      "types": "./dist/enums/index.d.ts",
-      "default": "./dist/enums/index.js"
-    },
-    "./interfaces": {
-      "types": "./dist/interfaces/index.d.ts",
-      "default": "./dist/interfaces/index.js"
-    },
-    "./utils": {
-      "types": "./dist/utils/index.d.ts",
-      "default": "./dist/utils/index.js"
-    },
-    "./types": {
-      "types": "./dist/types/index.d.ts",
-      "default": "./dist/types/index.js"
-    }
+    "./esnext": "./dist/esnext/index.js",
+    "./commonjs": "./dist/cjs/index.js",
+    "./*": "./dist/*"
   },
   "dependencies": {
     "@tosspayments/payment-sdk": "^1.9.1"

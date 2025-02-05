@@ -1,26 +1,20 @@
 {
   "compilerOptions": {
-    "module": "ES6", // 모듈 시스템
-    "target": "ES6", // 최신 ES6 이상을 지원
-    "declaration": true, // 타입 파일 생성
-    "declarationMap": true,
-    "moduleResolution": "node",
-    "rootDir": "./src",
-    "baseUrl": "./",
-    "paths": {
-      "*": ["./*"],
-      "@enums/*": ["./src/enums/*"],
-      "@interfaces/*": ["./src/interfaces/*"],
-      "@types/*": ["./src/types/*"]
-    },
-    "outDir": "./dist",
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "jsx": "react"
+    "target": "ES6", // 컴파일할 ECMAScript 버전
+    "module": "CommonJS", // 모듈 시스템(CommonJS, ES6 등)
+    "declaration": true, // .d.ts 파일 생성 (타입 선언 파일)
+    "outDir": "./dist", // 컴파일된 파일을 배치할 폴더
+    "rootDir": "./src", // 소스 파일의 루트 디렉토리
+    "strict": true, // 모든 엄격한 타입 검사 옵션 활성화
+    "esModuleInterop": true, // ES6 모듈 호환성 지원
+    "skipLibCheck": true, // 라이브러리의 타입 검사를 건너뜀
+    "forceConsistentCasingInFileNames": true // 파일 이름 대소문자 강제
   },
-  "include": ["./src"],
-  "exclude": ["node_modules", "dist"]
+  "include": [
+    "src/**/*" // 포함할 파일들
+  ],
+  "exclude": [
+    "node_modules", // 제외할 파일들
+    "dist"
+  ]
 }
