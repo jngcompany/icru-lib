@@ -1,5 +1,4 @@
 export * from './Answer'
 export * from './Payment'
-export * from './Question'
 export * from './Report'
 export * from './UserAnswer'

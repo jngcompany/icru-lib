@@ -7,9 +7,9 @@ import {
   RevolutionerSubType,
 } from '../enums/DiagnosisCase'
 import { DiagnosisStatus } from '../enums/DiagnosisStatus'
-import { Question } from '../types/Question'
 import { UserAnswer } from '../types/UserAnswer'
 import { Debriefer } from './Debriefer'
+import { DiagnosisQuestion } from './DiagnosisQuestion'
 import { Invitation } from './Invitation'
 import { User } from './User'
 
@@ -71,7 +71,7 @@ export interface Diagnosis extends DocumentData {
     mainType: MainType
     subType: RevolutionerSubType | EmotionerSubType | ActionerSubType | DetectorSubType
   }
-  questions?: { id: string; step: number }[] | Question[]
+  questions?: { id: string; step: number }[] | DiagnosisQuestion[]
   answers?: UserAnswer[]
   invitation?: Invitation
   createdAt: Timestamp
