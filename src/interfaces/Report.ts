@@ -1,10 +1,13 @@
+import { Diagnosis } from './Diagnosis'
 /*
  * SPDX-FileCopyrightText: © 2024, 주식회사 지음과깃듬 <jngcompany.co.kr | asanobm@outlook.com>
  * SPDX-License-Identifier: UNLICENSED
  */
 
-import { ReportType } from '../enums/ReportType'
+import { DocumentData, Timestamp } from 'firebase/firestore'
+import { Debriefer, User } from '.'
 import { ReportStatus } from '../enums/ReportStatus'
+import { ReportType } from '../enums/ReportType'
 
 /**
  * 리포트 인터페이스
@@ -18,13 +21,20 @@ import { ReportStatus } from '../enums/ReportStatus'
  * @property {ReportType} type - 리포트 유형
  * @property {ReportStatus} status - 리포트 상태
  */
-export interface Report {
-  userId: string
-  diagnosisId: string
-  organizationId: string
-  debrieferId: string
+export interface Report extends DocumentData {
+  id: string
+  user: User
+  Diagnosis: Diagnosis
+  debriefer?: Debriefer
   downloadUrl: string
   progress: number
   type: ReportType
   status: ReportStatus
+  createdAt: Timestamp
+  updatedAt: Timestamp
+  deletedAt?: Timestamp | null
 }
+
+export type CreateReport = Omit<Report, 'id' | 'createdAt' | 'updatedAt' | 'deletedAt'>
+export type UpdateReport = Omit<Report, 'id' | 'createdAt' | 'deletedAt'>
+export type RemoveReport = Pick<Report, 'deletedAt'>
