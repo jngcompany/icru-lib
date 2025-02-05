@@ -4,5 +4,6 @@
  */
 
 export * from './create'
+export * from './diagnosisResultCalculateScore'
 export * from './ICRUTypeCalculator'
 export * from './update'
