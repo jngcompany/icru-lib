@@ -3,9 +3,8 @@
  * SPDX-License-Identifier: UNLICENSED
  */
 
-
-import { ReportType } from "../enums/ReportType";
-import {ReportStatus} from "../enums/ReportStatus";
+import { ReportType } from '../enums/ReportType'
+import { ReportStatus } from '../enums/ReportStatus'
 
 /**
  * 리포트 인터페이스
@@ -20,12 +19,12 @@ import {ReportStatus} from "../enums/ReportStatus";
  * @property {ReportStatus} status - 리포트 상태
  */
 export interface Report {
-  userId: string;
-  diagnosisId: string;
-  organizationId: string;
-  debrieferId: string;
-  downloadUrl: string;
-  progress: number;
-  type: ReportType;
-  status: ReportStatus;
+  userId: string
+  diagnosisId: string
+  organizationId: string
+  debrieferId: string
+  downloadUrl: string
+  progress: number
+  type: ReportType
+  status: ReportStatus
 }

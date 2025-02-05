@@ -13,7 +13,7 @@
 export enum QuestionType {
   PROMOTION = 'PROMOTION',
   TEMPERAMENT = 'TEMPERAMENT',
-  RESILIENCE = 'RESILIENCE'
+  RESILIENCE = 'RESILIENCE',
 }
 
 /**
@@ -42,7 +42,10 @@ export const QuestionTypeEntries = Object.entries(QuestionType) as [string, stri
  * 각 값은 두 개의 동일한 문자열 값을 포함하는 튜플로 매핑되어 효과적으로 2차원 배열을 생성합니다.
  * 형식은 [값, 값]입니다.
  */
-export const QuestionTypeValuesEntries = Object.values(QuestionType).map(value => [value, value]) as [string, string][]
+export const QuestionTypeValuesEntries = Object.values(QuestionType).map((value) => [value, value]) as [
+  string,
+  string,
+][]
 
 /**
  * 질문 유형 키-값 쌍 배열
@@ -50,6 +53,4 @@ export const QuestionTypeValuesEntries = Object.values(QuestionType).map(value =
  * 이 변수는 `QuestionType` 객체의 속성을 반복 가능한 형식으로 제공하는 데 사용됩니다.
  * 형식은 [키, 키]입니다.
  */
-export const QuestionTypeKeysEntries = Object.keys(QuestionType).map(key => [key, key]) as [string, string][]
-
-
+export const QuestionTypeKeysEntries = Object.keys(QuestionType).map((key) => [key, key]) as [string, string][]

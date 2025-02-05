@@ -3,8 +3,14 @@
  * SPDX-License-Identifier: UNLICENSED
  */
 
-import { ProductType } from '../enums/ProductType'
+import { DocumentData, Timestamp } from 'firebase/firestore'
 import { ProductTarget } from '../enums/ProductTarget'
+import { ProductType } from '../enums/ProductType'
+
+export interface SubscriptionDiscount {
+  discountType: 'PERCENTAGE' | 'FIXED'
+  discountValue: number
+}
 
 /**
  * @description 상품 정보를 나타내는 타입
@@ -15,17 +21,30 @@ import { ProductTarget } from '../enums/ProductTarget'
  * @property {number} creditPrice - 크레딧 가격
  * @property {ProductType} productType - 상품 타입 (구독형, 일회성)
  * @property {UserProfile} target - 타켓 사용자
+ * @property {number} subscriptionMonths - 구독 기간 (개월) - 구독형 상품인 경우에만 사용
+ * @property {SubscriptionDiscount} subscriptionDiscount - 구독 할인 정보 - 구독형 상품인 경우에만 사용
  * @property {Date} createdAt - 생성 일자
  * @property {Date} updatedAt - 업데이트 일자
  */
-export interface Product {
+export interface Product extends DocumentData {
+  id: string
   name: string
   description: string
   salesPrice: number
   creditPrice: number
   productType: ProductType
-  target?: ProductTarget
+  target: ProductTarget
+  isActive: boolean
+  subscriptionMonths?: number
+  subscriptionDiscount?: SubscriptionDiscount
+  createdAt: Timestamp
+  updatedAt: Timestamp
+  deletedAt?: Timestamp | null
 }
+
+export type CreateProduct = Omit<Product, 'id' | 'deletedAt'>
+export type UpdateProduct = Omit<Product, 'id' | 'createdAt' | 'deletedAt'>
+export type RemoveProduct = Pick<Product, 'id' | 'deletedAt'>
 
 /**
  * @description 판매 전략을 나타내는 타입
@@ -42,7 +61,6 @@ export interface Product {
  * @property {Date} updatedAt - 수정일
  */
 export interface SaleStrategy {
-  id?: string
   productId: string
   name: string
   description: string
@@ -74,7 +92,6 @@ export interface Subscription {
  * @property {Date} purchasedAt - 구매 일자
  */
 export interface PurchaseHistory {
-  id?: string
   productId: string
   paymentId: string
   userId: string

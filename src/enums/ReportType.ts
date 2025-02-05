@@ -1,4 +1,4 @@
 export enum ReportType {
   BASIC = 'BASIC',
-  PREMIUM = 'PREMIUM'
+  PREMIUM = 'PREMIUM',
 }

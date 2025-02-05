@@ -33,7 +33,7 @@ export const MainTypeKeys = Object.keys(MainType) as string[]
 /**
  * MainType 객체의 키-값 쌍 배열
  * 이 변수는 `MainType` 객체의 모든 속성을 추출하고 결과 배열을 문자열 배열로 캐스팅합니다.
- * 
+ *
  * 이 변수는 `Object.entries`를 사용하여 `MainType` 객체에서 모든 열거 가능한
  * 문자열 키의 [키, 값] 쌍을 검색하여 생성됩니다.
  */
@@ -42,24 +42,23 @@ export const MainTypeEntries = Object.entries(MainType) as [string, string][]
 /**
  * MainType 열거형의 값에서 파생된 키-값 쌍 배열
  * 각 값은 두 개의 동일한 문자열 값을 포함하는 튜플로 매핑되어 효과적으로 2차원 배열을 생성합니다.
- * 
+ *
  * 이 변수는 `Object.values`를 사용하여 `MainType` 열거형의 값을 추출한 다음
  * 튜플 배열로 매핑하여 생성됩니다. 각 튜플은 키와 값으로 동일한 값을 반복합니다.
- * 
+ *
  * 이 변수의 타입은 문자열 튜플의 배열로 엄격하게 정의됩니다:
  * `[string, string][]`
  */
-export const MainTypeValuesEntries = Object.values(MainType).map(value => [value, value]) as [string, string][]
+export const MainTypeValuesEntries = Object.values(MainType).map((value) => [value, value]) as [string, string][]
 
 /**
  * MainType 객체의 키에서 파생된 엔트리 배열
  * 각 엔트리는 키가 두 요소로 반복되는 튜플을 포함합니다.
  * 매핑 생성이나 키 일관성 보장에 유용합니다.
- * 
+ *
  * 이 변수는 각 튜플이 두 개의 문자열 값을 포함하는 튜플 배열로 정적 타입이 지정됩니다.
  */
-export const MainTypeKeysEntries = Object.keys(MainType).map(key => [key, key]) as [string, string][]
-
+export const MainTypeKeysEntries = Object.keys(MainType).map((key) => [key, key]) as [string, string][]
 
 /**
  * 창조가(Revolutioner)의 서브타입을 나타내는 열거형입니다.
@@ -71,9 +70,9 @@ export const MainTypeKeysEntries = Object.keys(MainType).map(key => [key, key]) 
  */
 export enum RevolutionerSubType {
   REVOLUTIONER = 'REVOLUTIONER', // 창조가
-  SHERPA = 'SHERPA',  // 안내자
-  MAVERICK = 'MAVERICK',  // 승부사
-  ARTISAN = 'ARTISAN',  // 장인
+  SHERPA = 'SHERPA', // 안내자
+  MAVERICK = 'MAVERICK', // 승부사
+  ARTISAN = 'ARTISAN', // 장인
 }
 
 /**
@@ -83,7 +82,7 @@ export const RevolutionerSubTypeValues = Object.values(RevolutionerSubType) as s
 
 /**
  * RevolutionerSubType 객체의 키를 문자열 배열로 캐스팅한 배열입니다.
- * 
+ *
  * 이 변수는 RevolutionerSubType 객체의 문자열 기반 키를 나타내며,
  * 속성에 대한 쉬운 접근이나 반복 작업을 위해 사용됩니다.
  */
@@ -92,7 +91,7 @@ export const RevolutionerSubTypeKeys = Object.keys(RevolutionerSubType) as strin
 /**
  * RevolutionerSubType 객체의 키-값 쌍 배열
  * 이 변수는 `RevolutionerSubType` 객체의 모든 속성을 추출하고 결과 배열을 문자열 배열로 캐스팅합니다.
- * 
+ *
  * 이 변수는 `Object.entries`를 사용하여 `RevolutionerSubType` 객체에서 모든 열거 가능한
  * 문자열 키의 [키, 값] 쌍을 검색하여 생성됩니다.
  */
@@ -101,25 +100,29 @@ export const RevolutionerSubTypeEntries = Object.entries(RevolutionerSubType) as
 /**
  * RevolutionerSubType 열거형의 값에서 파생된 키-값 쌍 배열
  * 각 값은 두 개의 동일한 문자열 값을 포함하는 튜플로 매핑되어 효과적으로 2차원 배열을 생성합니다.
- * 
+ *
  * 이 변수는 `Object.values`를 사용하여 `RevolutionerSubType` 열거형의 값을 추출한 다음
  * 튜플 배열로 매핑하여 생성됩니다. 각 튜플은 키와 값으로 동일한 값을 반복합니다.
- * 
+ *
  * 이 변수의 타입은 문자열 튜플의 배열로 엄격하게 정의됩니다:
  * `[string, string][]`
  */
-export const RevolutionerSubTypeValuesEntries = Object.values(RevolutionerSubType).map(value => [value, value]) as [string, string][]
+export const RevolutionerSubTypeValuesEntries = Object.values(RevolutionerSubType).map((value) => [value, value]) as [
+  string,
+  string,
+][]
 
 /**
  * RevolutionerSubType 객체의 키에서 파생된 엔트리 배열
  * 각 엔트리는 키가 두 요소로 반복되는 튜플을 포함합니다.
  * 매핑 생성이나 키 일관성 보장에 유용합니다.
- * 
+ *
  * 이 변수는 각 튜플이 두 개의 문자열 값을 포함하는 튜플 배열로 정적 타입이 지정됩니다.
  */
-export const RevolutionerSubTypeKeysEntries = Object.keys(RevolutionerSubType).map(key => [key, key]) as [string, string][]
-
-
+export const RevolutionerSubTypeKeysEntries = Object.keys(RevolutionerSubType).map((key) => [key, key]) as [
+  string,
+  string,
+][]
 
 /**
  * 상담가(Emotioner)의 서브타입을 나타내는 열거형입니다.
@@ -143,7 +146,7 @@ export const EmotionerSubTypeValues = Object.values(EmotionerSubType) as string[
 
 /**
  * EmotionerSubType 객체의 키를 문자열 배열로 캐스팅한 배열입니다.
- * 
+ *
  * 이 변수는 EmotionerSubType 객체의 문자열 기반 키를 나타내며,
  * 속성에 대한 쉬운 접근이나 반복 작업을 위해 사용됩니다.
  */
@@ -152,7 +155,7 @@ export const EmotionerSubTypeKeys = Object.keys(EmotionerSubType) as string[]
 /**
  * EmotionerSubType 객체의 키-값 쌍 배열
  * 이 변수는 `EmotionerSubType` 객체의 모든 속성을 추출하고 결과 배열을 문자열 배열로 캐스팅합니다.
- * 
+ *
  * 이 변수는 `Object.entries`를 사용하여 `EmotionerSubType` 객체에서 모든 열거 가능한
  * 문자열 키의 [키, 값] 쌍을 검색하여 생성됩니다.
  */
@@ -161,23 +164,26 @@ export const EmotionerSubTypeEntries = Object.entries(EmotionerSubType) as [stri
 /**
  * EmotionerSubType 열거형의 값에서 파생된 키-값 쌍 배열
  * 각 값은 두 개의 동일한 문자열 값을 포함하는 튜플로 매핑되어 효과적으로 2차원 배열을 생성합니다.
- * 
+ *
  * 이 변수는 `Object.values`를 사용하여 `EmotionerSubType` 열거형의 값을 추출한 다음
  * 튜플 배열로 매핑하여 생성됩니다. 각 튜플은 키와 값으로 동일한 값을 반복합니다.
- * 
+ *
  * 이 변수의 타입은 문자열 튜플의 배열로 엄격하게 정의됩니다:
  * `[string, string][]`
  */
-export const EmotionerSubTypeValuesEntries = Object.values(EmotionerSubType).map(value => [value, value]) as [string, string][]
+export const EmotionerSubTypeValuesEntries = Object.values(EmotionerSubType).map((value) => [value, value]) as [
+  string,
+  string,
+][]
 
 /**
  * EmotionerSubType 객체의 키에서 파생된 엔트리 배열
  * 각 엔트리는 키가 두 요소로 반복되는 튜플을 포함합니다.
  * 매핑 생성이나 키 일관성 보장에 유용합니다.
- * 
+ *
  * 이 변수는 각 튜플이 두 개의 문자열 값을 포함하는 튜플 배열로 정적 타입이 지정됩니다.
  */
-export const EmotionerSubTypeKeysEntries = Object.keys(EmotionerSubType).map(key => [key, key]) as [string, string][]
+export const EmotionerSubTypeKeysEntries = Object.keys(EmotionerSubType).map((key) => [key, key]) as [string, string][]
 
 /**
  * 행동가(Actioner)의 서브타입을 나타내는 열거형입니다.
@@ -190,7 +196,7 @@ export const EmotionerSubTypeKeysEntries = Object.keys(EmotionerSubType).map(key
 export enum ActionerSubType {
   ACTIONER = 'ACTIONER', // 행동가
   INNOVATOR = 'INNOVATOR', // 혁명가
-  KINGPIN = 'KINGPIN',  // 선도자
+  KINGPIN = 'KINGPIN', // 선도자
   GUARDIAN = 'GUARDIAN', // 보호자
 }
 
@@ -201,7 +207,7 @@ export const ActionerSubTypeValues = Object.values(ActionerSubType) as string[]
 
 /**
  * ActionerSubType 객체의 키를 문자열 배열로 캐스팅한 배열입니다.
- * 
+ *
  * 이 변수는 ActionerSubType 객체의 문자열 기반 키를 나타내며,
  * 속성에 대한 쉬운 접근이나 반복 작업을 위해 사용됩니다.
  */
@@ -210,7 +216,7 @@ export const ActionerSubTypeKeys = Object.keys(ActionerSubType) as string[]
 /**
  * ActionerSubType 객체의 키-값 쌍 배열
  * 이 변수는 `ActionerSubType` 객체의 모든 속성을 추출하고 결과 배열을 문자열 배열로 캐스팅합니다.
- * 
+ *
  * 이 변수는 `Object.entries`를 사용하여 `ActionerSubType` 객체에서 모든 열거 가능한
  * 문자열 키의 [키, 값] 쌍을 검색하여 생성됩니다.
  */
@@ -219,23 +225,26 @@ export const ActionerSubTypeEntries = Object.entries(ActionerSubType) as [string
 /**
  * ActionerSubType 열거형의 값에서 파생된 키-값 쌍 배열
  * 각 값은 두 개의 동일한 문자열 값을 포함하는 튜플로 매핑되어 효과적으로 2차원 배열을 생성합니다.
- * 
+ *
  * 이 변수는 `Object.values`를 사용하여 `ActionerSubType` 열거형의 값을 추출한 다음
  * 튜플 배열로 매핑하여 생성됩니다. 각 튜플은 키와 값으로 동일한 값을 반복합니다.
- * 
+ *
  * 이 변수의 타입은 문자열 튜플의 배열로 엄격하게 정의됩니다:
  * `[string, string][]`
  */
-export const ActionerSubTypeValuesEntries = Object.values(ActionerSubType).map(value => [value, value]) as [string, string][]
+export const ActionerSubTypeValuesEntries = Object.values(ActionerSubType).map((value) => [value, value]) as [
+  string,
+  string,
+][]
 
 /**
  * ActionerSubType 객체의 키에서 파생된 엔트리 배열
  * 각 엔트리는 키가 두 요소로 반복되는 튜플을 포함합니다.
  * 매핑 생성이나 키 일관성 보장에 유용합니다.
- * 
+ *
  * 이 변수는 각 튜플이 두 개의 문자열 값을 포함하는 튜플 배열로 정적 타입이 지정됩니다.
  */
-export const ActionerSubTypeKeysEntries = Object.keys(ActionerSubType).map(key => [key, key]) as [string, string][]
+export const ActionerSubTypeKeysEntries = Object.keys(ActionerSubType).map((key) => [key, key]) as [string, string][]
 
 /**
  * 분석가(Detector)의 서브타입을 나타내는 열거형입니다.
@@ -247,9 +256,9 @@ export const ActionerSubTypeKeysEntries = Object.keys(ActionerSubType).map(key =
  */
 export enum DetectorSubType {
   DETECTOR = 'DETECTOR', // 분석가
-  RENOVATOR = 'RENOVATOR',  // 쇄신가
-  COORDINATOR = 'COORDINATOR',  // 조정자
-  DEVELOPER = 'DEVELOPER',  // 개발자
+  RENOVATOR = 'RENOVATOR', // 쇄신가
+  COORDINATOR = 'COORDINATOR', // 조정자
+  DEVELOPER = 'DEVELOPER', // 개발자
 }
 
 /**
@@ -259,7 +268,7 @@ export const DetectorSubTypeValues = Object.values(DetectorSubType) as string[]
 
 /**
  * DetectorSubType 객체의 키를 문자열 배열로 캐스팅한 배열입니다.
- * 
+ *
  * 이 변수는 DetectorSubType 객체의 문자열 기반 키를 나타내며,
  * 속성에 대한 쉬운 접근이나 반복 작업을 위해 사용됩니다.
  */
@@ -268,7 +277,7 @@ export const DetectorSubTypeKeys = Object.keys(DetectorSubType) as string[]
 /**
  * DetectorSubType 객체의 키-값 쌍 배열
  * 이 변수는 `DetectorSubType` 객체의 모든 속성을 추출하고 결과 배열을 문자열 배열로 캐스팅합니다.
- * 
+ *
  * 이 변수는 `Object.entries`를 사용하여 `DetectorSubType` 객체에서 모든 열거 가능한
  * 문자열 키의 [키, 값] 쌍을 검색하여 생성됩니다.
  */
@@ -277,35 +286,34 @@ export const DetectorSubTypeEntries = Object.entries(DetectorSubType) as [string
 /**
  * DetectorSubType 열거형의 값에서 파생된 키-값 쌍 배열
  * 각 값은 두 개의 동일한 문자열 값을 포함하는 튜플로 매핑되어 효과적으로 2차원 배열을 생성합니다.
- * 
+ *
  * 이 변수는 `Object.values`를 사용하여 `DetectorSubType` 열거형의 값을 추출한 다음
  * 튜플 배열로 매핑하여 생성됩니다. 각 튜플은 키와 값으로 동일한 값을 반복합니다.
- * 
+ *
  * 이 변수의 타입은 문자열 튜플의 배열로 엄격하게 정의됩니다:
  * `[string, string][]`
  */
-export const DetectorSubTypeValuesEntries = Object.values(DetectorSubType).map(value => [value, value]) as [string, string][]
+export const DetectorSubTypeValuesEntries = Object.values(DetectorSubType).map((value) => [value, value]) as [
+  string,
+  string,
+][]
 
 /**
  * DetectorSubType 객체의 키에서 파생된 엔트리 배열
  * 각 엔트리는 키가 두 요소로 반복되는 튜플을 포함합니다.
  * 매핑 생성이나 키 일관성 보장에 유용합니다.
- * 
+ *
  * 이 변수는 각 튜플이 두 개의 문자열 값을 포함하는 튜플 배열로 정적 타입이 지정됩니다.
  */
-export const DetectorSubTypeKeysEntries = Object.keys(DetectorSubType).map(key => [key, key]) as [string, string][]
+export const DetectorSubTypeKeysEntries = Object.keys(DetectorSubType).map((key) => [key, key]) as [string, string][]
 
 /**
  * 진단 결과를 나타내는 타입입니다.
  */
 export type DiagnosisCase = {
-  mainType: MainType;
-  subType:
-    | RevolutionerSubType
-    | EmotionerSubType
-    | ActionerSubType
-    | DetectorSubType;
-};
+  mainType: MainType
+  subType: RevolutionerSubType | EmotionerSubType | ActionerSubType | DetectorSubType
+}
 
 /**
  * 최종 타입의 짧은 이름을 가져오는 함수입니다.
@@ -317,60 +325,59 @@ export const getFinalTypeShortName = (diagnosisCase: DiagnosisCase): string => {
     case MainType.REVOLUTIONER:
       switch (diagnosisCase.subType) {
         case RevolutionerSubType.REVOLUTIONER:
-          return 'R';
+          return 'R'
         case RevolutionerSubType.SHERPA:
-          return 'RE';
+          return 'RE'
         case RevolutionerSubType.MAVERICK:
-          return 'RA';
+          return 'RA'
         case RevolutionerSubType.ARTISAN:
-          return 'RD';
+          return 'RD'
         default:
-          return 'R';
+          return 'R'
       }
     case MainType.EMOTIONER:
       switch (diagnosisCase.subType) {
         case EmotionerSubType.EMOTIONER:
-          return 'E';
+          return 'E'
         case EmotionerSubType.CATALYST:
-          return 'ER';
+          return 'ER'
         case EmotionerSubType.SPOKESPERSON:
-          return 'EA';
+          return 'EA'
         case EmotionerSubType.ORCHESTRATOR:
-          return 'ED';
+          return 'ED'
         default:
-          return 'E';
+          return 'E'
       }
     case MainType.ACTIONER:
       switch (diagnosisCase.subType) {
         case ActionerSubType.ACTIONER:
-          return 'A';
+          return 'A'
         case ActionerSubType.INNOVATOR:
-          return 'AR';
+          return 'AR'
         case ActionerSubType.KINGPIN:
-          return 'AE';
+          return 'AE'
         case ActionerSubType.GUARDIAN:
-          return 'AD';
+          return 'AD'
         default:
-          return 'A';
+          return 'A'
       }
     case MainType.DETECTOR:
       switch (diagnosisCase.subType) {
         case DetectorSubType.DETECTOR:
-          return 'D';
+          return 'D'
         case DetectorSubType.RENOVATOR:
-          return 'DR';
+          return 'DR'
         case DetectorSubType.COORDINATOR:
-          return 'DE';
+          return 'DE'
         case DetectorSubType.DEVELOPER:
-          return 'DA';
+          return 'DA'
         default:
-          return 'D';
+          return 'D'
       }
     default:
-      return '';
+      return ''
   }
 }
-
 
 /**
  * 메인 타입에 따른 서브타입을 가져오는 타입 가드입니다.
@@ -378,12 +385,12 @@ export const getFinalTypeShortName = (diagnosisCase: DiagnosisCase): string => {
 export const getSubTypeByMain = (mainType: MainType) => {
   switch (mainType) {
     case MainType.REVOLUTIONER:
-      return RevolutionerSubType;
+      return RevolutionerSubType
     case MainType.EMOTIONER:
-      return EmotionerSubType;
+      return EmotionerSubType
     case MainType.ACTIONER:
-      return ActionerSubType;
+      return ActionerSubType
     case MainType.DETECTOR:
-      return DetectorSubType;
+      return DetectorSubType
   }
 }

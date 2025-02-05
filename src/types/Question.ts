@@ -19,9 +19,8 @@ import { Answer } from './Answer'
  * @property {number} version - 질문의 버전 번호.
  * @property {boolean} isFirst - 이것이 첫 번째 질문인지 여부를 나타냅니다.
  */
-export interface Question {
-  id: string
-  content: {
+export type Question = {
+  question: {
     ko: string
     en: string
   }

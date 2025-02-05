@@ -3,7 +3,6 @@
  * SPDX-License-Identifier: UNLICENSED
  */
 
-
 /**
  * 국가 열거형
  * @enum {string}
@@ -14,5 +13,5 @@
 export enum Country {
   KR = 'KR',
   JP = 'JP',
-  US = 'US'
+  US = 'US',
 }

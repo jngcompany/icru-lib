@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: UNLICENSED
  */
 
-import { AnswerType } from '../enums/AnswerType'
+import { AnswerType } from './../enums/AnswerType'
 
 /**
  * 답변을 나타내는 타입입니다.
@@ -15,7 +15,7 @@ import { AnswerType } from '../enums/AnswerType'
  * @property {string} [deletedAt] - 답변이 삭제된 날짜와 시간입니다. 선택적 속성입니다.
  * @property {number} version - 답변의 버전입니다.
  */
-export interface Answer {
+export type Answer = {
   id?: string
   text: {
     ko: string

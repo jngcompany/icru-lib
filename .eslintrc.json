@@ -1,0 +1,12 @@
+{
+  "rules": {
+    // ...existing code...
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": ["src/*"]
+      }
+    ]
+    // ...existing code...
+  }
+}

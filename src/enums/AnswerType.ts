@@ -15,12 +15,12 @@ export enum AnswerType {
   R = 'R',
   E = 'E',
   A = 'A',
-  D = 'D'
+  D = 'D',
 }
 
 export const AnswerTypeList = [
   { value: AnswerType.R, label: 'R' },
   { value: AnswerType.E, label: 'E' },
   { value: AnswerType.A, label: 'A' },
-  { value: AnswerType.D, label: 'D' }
+  { value: AnswerType.D, label: 'D' },
 ]

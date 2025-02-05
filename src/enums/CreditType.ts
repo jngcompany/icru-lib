@@ -3,9 +3,7 @@
  * SPDX-License-Identifier: UNLICENSED
  */
 
-export enum ReportStatus {
-  PENDING = 'PENDING',
-  PROCESSING = 'PROCESSING',
-  COMPLETED = 'COMPLETED',
-  FAILED = 'FAILED',
+export enum CreditType {
+  FREE = 'FREE',
+  PAID = 'PAID',
 }
