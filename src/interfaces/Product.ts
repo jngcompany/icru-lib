@@ -13,7 +13,7 @@ export interface SubscriptionDiscount {
 }
 
 /**
- * @description 상품 정보를 나타내는 타입
+ * 상품 정보를 나타내는 타입
  * @property {string} id - 상품 아이디
  * @property {string} name - 상품 이름
  * @property {string} description - 상품 설명
@@ -47,7 +47,7 @@ export type UpdateProduct = Omit<Product, 'id' | 'createdAt' | 'deletedAt'>
 export type RemoveProduct = Pick<Product, 'id' | 'deletedAt'>
 
 /**
- * @description 판매 전략을 나타내는 타입
+ * 판매 전략을 나타내는 타입
  * @property {string} id - 판매 전략 아이디
  * @property {string} productId - 대상 상품 아이디
  * @property {string} name - 판매 전략 이름
@@ -82,7 +82,7 @@ export interface Subscription {
 }
 
 /**
- * @description 상품 구매 이력을 나타내는 타입
+ * 상품 구매 이력을 나타내는 타입
  * @property {string} id - 구매 이력 아이디
  * @property {string} productId - 구매한 상품 아이디
  * @property {string} paymentId - 결제 아이디

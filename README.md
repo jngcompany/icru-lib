@@ -9,7 +9,7 @@ npm install @jngcompany/icru-lib
 ## Usage
 
 ```tsx
-import { useDoc } from '@jngcompany/icru-lib';
+import { useDoc } from '@jngcompany/icru-lib'
 ```
 
 ## Docs
@@ -18,7 +18,6 @@ import { useDoc } from '@jngcompany/icru-lib';
 npm run docs
 ```
 
-
 ## Docs
 
-[Docs](docs/globals.md)
+[Docs](docs/index.md)
