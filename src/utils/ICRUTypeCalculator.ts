@@ -1,8 +1,9 @@
-import { MainType } from './../enums/DiagnosisCase'
 /*
  * SPDX-FileCopyrightText: © 2024, 주식회사 지음과깃듬 <jngcompany.co.kr | asanobm@outlook.com>
  * SPDX-License-Identifier: UNLICENSED
  */
+
+import { MainType } from '../enums/DiagnosisCase'
 
 /**
  * ICRU 서브 타입 열거형
@@ -195,10 +196,21 @@ export const getICRUCode = (scores: ICRUScores): ICRUCode => {
   const [highest, ...others] = sortedScores
   const highestPreference = getPreferenceLevel(highest[1])
 
-  // 가장 높은 점수가 ULTRA_STRONG이고 나머지가 VERY_LOW인 경우
-  const allOthersVeryLow = others.every(([_, score]) => getPreferenceLevel(score) === PreferenceLevel.VERY_LOW)
+  // 순수 타입 판별을 위한 임계값 설정
+  // 이 값보다 낮은 점수는 해당 성향이 약하다고 판단
+  const originalThreshold = 22
 
+  // 다른 모든 점수들이 임계값보다 낮은지 확인
+  // others 배열의 모든 요소를 순회하며 점수가 임계값보다 낮은지 체크
+  // ([_, score]) 구조 분해를 통해 점수값만 추출하여 비교
+  const allOthersVeryLow = others.every(([_, score]) => originalThreshold >= score)
+
+  // 가장 높은 성향이 매우 강하고(ULTRA_STRONG)
+  // 다른 모든 성향이 임계값보다 낮은 경우
+  // 이는 한 가지 성향이 매우 뚜렷한 "순수" 타입을 의미
   if (highestPreference === PreferenceLevel.ULTRA_STRONG && allOthersVeryLow) {
+    // 가장 높은 성향을 두 번 반복하여 순수 타입 코드 생성
+    // 예: R -> RR, E -> EE 등
     return `${highest[0]}${highest[0]}` as ICRUCode
   }
 
