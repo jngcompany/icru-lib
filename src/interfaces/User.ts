@@ -20,7 +20,6 @@ export interface User extends DocumentData {
   photoURL: string | null
   metadata: {
     creationTime: string
-    lastRefreshTime: string
     lastSignInTime: string
   }
   providerData: Array<{
