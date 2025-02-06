@@ -1,6 +1,6 @@
 {
   "name": "@jngcompany/icru-lib",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "./dist/index.js",
   "license": "UNLICENSED",
   "types": "./dist/index.d.ts",
@@ -27,6 +27,7 @@
     "registry": "https://npm.pkg.github.com"
   },
   "exports": {
+    ".": "./dist/index.js",
     "./esnext": "./dist/esnext/index.js",
     "./commonjs": "./dist/cjs/index.js",
     "./*": "./dist/*"
