@@ -3,17 +3,21 @@
  * SPDX-License-Identifier: UNLICENSED
  */
 
-import { QuestionType } from '../enums/QuestionType'
+import { QuestionType } from '../enums'
 
 /**
- * 사용자의 답변을 나타내는 인터페이스
- * @interface UserAnswer
- * @extends {Answer}
- * @property {AnswerType[] | boolean} selections - 사용자가 선택한 답변들 또는 boolean 값
+ * 사용자 답변을 나타내는 타입입니다.
+ *
+ * @property questionId 질문의 고유 식별자입니다.
+ * @property selections 사용자가 선택한 답변입니다. 각 속성은 숫자, 불리언 또는 null 값을 가질 수 있습니다.
+ * - R: 숫자, 불리언 또는 null 값
+ * - E: 숫자, 불리언 또는 null 값
+ * - A: 숫자, 불리언 또는 null 값
+ * - D: 숫자, 불리언 또는 null 값
  */
 export type UserAnswer = {
   questionId: string
-  type: QuestionType
+  questionType: QuestionType
   selections: {
     R: number | boolean | null
     E: number | boolean | null
