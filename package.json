@@ -5,32 +5,13 @@
     "name": "Asanobm",
     "email": "asanobm@outlook.com"
   },
-  "version": "0.2.3",
+  "version": "0.2.4",
   "main": "./dist/index.js",
-  "license": "UNLICENSED",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/*"
-      ],
-      ".": [
-        "./dist/index.d.ts"
-      ],
-      "enums": [
-        "./dist/enums/index.d.ts"
-      ],
-      "interfaces": [
-        "./dist/interfaces/index.d.ts"
-      ],
-      "utils": [
-        "./dist/utils/index.d.ts"
-      ],
-      "types": [
-        "./dist/types/index.d.ts"
-      ]
-    }
-  },
+  "type": "module",
+  "sideEffects": false,
+  "license": "UNLICENSED",
   "files": [
     "dist"
   ],
@@ -52,28 +33,6 @@
   "publishConfig": {
     "access": "restricted",
     "registry": "https://npm.pkg.github.com"
-  },
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
-    },
-    "./enums": {
-      "types": "./dist/enums/index.d.ts",
-      "default": "./dist/enums/index.js"
-    },
-    "./interfaces": {
-      "types": "./dist/interfaces/index.d.ts",
-      "default": "./dist/interfaces/index.js"
-    },
-    "./utils": {
-      "types": "./dist/utils/index.d.ts",
-      "default": "./dist/utils/index.js"
-    },
-    "./types": {
-      "types": "./dist/types/index.d.ts",
-      "default": "./dist/types/index.js"
-    }
   },
   "dependencies": {
     "@tosspayments/payment-sdk": "^1.9.1"
