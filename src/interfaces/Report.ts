@@ -24,7 +24,7 @@ import { ReportType } from '../enums/ReportType'
 export interface Report extends DocumentData {
   id: string
   user: User
-  Diagnosis: Diagnosis
+  diagnosis: Diagnosis
   debriefer?: Debriefer
   downloadUrl: string
   progress: number
