@@ -24,8 +24,7 @@ export interface ReportLimit extends DocumentData {
   /** 최대 제한 값 */
   limit: number
   /** 현재 사용된 값 */
-  used: number
-
+  used: [{ when: string; count: number }]
   /** 생성 일시 */
   createdAt: Timestamp
   /** 수정 일시 */
