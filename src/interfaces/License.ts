@@ -13,7 +13,7 @@ import { ExpireType } from '../enums/ExpireType'
 export interface License extends DocumentData {
   id: string
   number: string
-  expirationDate?: Date
+  expirationDate?: Timestamp | null
   expired: boolean
   expireType: ExpireType
   createdAt: Timestamp
