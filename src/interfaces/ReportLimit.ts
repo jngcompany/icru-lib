@@ -21,6 +21,8 @@ export interface ReportLimit extends DocumentData {
   reportType: ReportType
   /** 제한 유형 */
   limitType: ReportLimitType
+  /** 종료일 */
+  endDate: Timestamp
   /** 최대 제한 값 */
   limit: number
   /** 현재 사용된 값 */
