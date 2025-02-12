@@ -21,6 +21,8 @@ import { User } from './User'
  */
 export interface Debriefer extends DocumentData {
   id: string
+  displayName: string
+  businessNumber?: string
   owner: User
   members: User[]
   license: License
