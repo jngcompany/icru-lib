@@ -18,7 +18,9 @@
  * @property {string} PAYMENTS - 결제
  * @property {string} SUBSCRIPTIONS - 구독
  * @property {string} PURCHASE_HISTORIES - 구매 이력
- * @property {string} USERS - 사용자
+ * @property {string} CREDITS - 크레딧 잔액
+ * @property {string} CREDIT_TRANSACTIONS - 크레딧 거래 내역
+ * @property {string} REPORT_LIMITS - 보고서 제한
  */
 export enum Collections {
   USER_DIAGNOSIS = 'userDiagnosis',
@@ -32,11 +34,13 @@ export enum Collections {
   PROMOTIONS = 'promotions',
   PAYMENTS = 'payments',
   SUBSCRIPTIONS = 'subscriptions',
-  PURCHASE_HISTORIES = 'purchase_histories',
+  PURCHASE_HISTORIES = 'purchaseHistories',
   USERS = 'users',
   DEBRIEFERS = 'debriefers',
   LICENSES = 'licenses',
   CREDITS = 'credits',
+  CREDIT_TRANSACTIONS = 'creditTransactions',
   REPORT_LIMITS = 'reportLimits',
   APPLY_DEBRIEFERS = 'applyDebriefers',
+  NEW_DEBRIEFER_STEPS = 'newDebrieferSteps',
 }

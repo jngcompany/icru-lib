@@ -8,3 +8,14 @@ export enum ExpireType {
   TIMELIMIT = 'TIMELIMIT',
   FIXED = 'FIXED',
 }
+
+export function toLabel(expireType: ExpireType): string {
+  switch (expireType) {
+    case ExpireType.TIMELIMIT:
+      return '기간제 만료'
+    case ExpireType.FIXED:
+      return '고정 만료일'
+    default:
+      return '알 수 없음'
+  }
+}

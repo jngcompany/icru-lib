@@ -29,7 +29,7 @@
     "docs": "typedoc --out docs src --plugin typedoc-plugin-markdown"
   },
   "peerDependencies": {
-    "firebase": "^11.0.0"
+    "firebase": "^11.10.0"
   },
   "devDependencies": {
     "prettier": "^3.4.2",
@@ -41,5 +41,8 @@
   "publishConfig": {
     "access": "restricted",
     "registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.4.0"
   }
 }

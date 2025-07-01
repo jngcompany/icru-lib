@@ -4,12 +4,11 @@
  */
 
 /**
- * Enum for AnswerType (답변 유형)
- * @enum {string}
- * @property {string} R - 창조가 유형
- * @property {string} E - 상담가 유형
- * @property {string} A - 행동가 유형
- * @property {string} D - 분석가 유형
+ * 답변 유형 열거형
+ * - R: 창조가 유형
+ * - E: 상담가 유형
+ * - A: 행동가 유형
+ * - D: 분석가 유형
  */
 export enum AnswerType {
   R = 'R',
@@ -18,6 +17,9 @@ export enum AnswerType {
   D = 'D',
 }
 
+/**
+ * UI에서 사용 가능한 답변 유형 옵션 목록
+ */
 export const AnswerTypeList = [
   { value: AnswerType.R, label: 'R' },
   { value: AnswerType.E, label: 'E' },

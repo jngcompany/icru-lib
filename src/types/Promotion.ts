@@ -3,20 +3,15 @@
  * SPDX-License-Identifier: UNLICENSED
  */
 
-import { DocumentData, Timestamp } from 'firebase/firestore'
 import { PromotionStatus } from '../enums/PromotionStatus'
-import { UserAnswer } from '../types/UserAnswer'
 import { User } from './User'
+import { UserAnswer } from './UserAnswer'
 
 /**
- * 프로모션 인터페이스
- * @interface Promotion
- * @property {string} userId - 사용자 ID
- * @property {PromotionStatus} status - 상태 (NOT_STARTED: 생성만됨, IN_PROGRESS: 진행중, COMPLETED: 완료됨)
- * @property {UserAnswer[]} answers - 사용자 답변
- * @property {Object} score - 점수
+ * 프로모션 진단 정보를 나타내는 인터페이스
+ * 사용자 정보, 진단 상태, 사용자 답변, 로그, 점수 포함
  */
-export interface Promotion extends DocumentData {
+export interface Promotion {
   id: string
   user?: User
   status: PromotionStatus
@@ -25,7 +20,7 @@ export interface Promotion extends DocumentData {
     step: number
     type: 'R' | 'E' | 'A' | 'D'
     action: 'select' | 'deselect' | 'next' | 'back'
-    timestamp: Timestamp
+    timestamp: Date
   }>
   score: {
     R: number
@@ -33,10 +28,17 @@ export interface Promotion extends DocumentData {
     A: number
     D: number
   }
-  createdAt: Timestamp
-  updatedAt: Timestamp
-  deletedAt?: Timestamp | null
+  createdAt: Date
+  updatedAt: Date
+  deletedAt?: Date | null
 }
 
+/**
+ * 프로모션 생성 시 사용되는 타입
+ */
 export type CreatePromotion = Omit<Promotion, 'id' | 'deletedAt'>
+
+/**
+ * 프로모션 업데이트 시 사용되는 타입
+ */
 export type UpdatePromotion = Omit<Promotion, 'id' | 'createdAt' | 'deletedAt'>

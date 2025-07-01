@@ -9,4 +9,5 @@ import { ReportType } from './ReportType'
 export const ReportPrice = {
   [ReportType.BASIC]: 10000,
   [ReportType.PREMIUM]: 30000,
+  [ReportType.RESILIENCE]: 5000,
 }

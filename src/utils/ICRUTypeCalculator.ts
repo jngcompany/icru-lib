@@ -3,7 +3,8 @@
  * SPDX-License-Identifier: UNLICENSED
  */
 
-import { MainType } from '../enums/DiagnosisCase'
+import { MainType } from "../enums/DiagnosisCase";
+
 
 /**
  * ICRU 서브 타입 열거형
@@ -65,23 +66,7 @@ export const PREFERENCE_SCORES = {
  * 두 문자로 구성된 16가지 가능한 조합
  * 첫 번째 문자는 주요 성향, 두 번째 문자는 부가 성향을 나타냄
  */
-export type ICRUCode =
-  | 'RR'
-  | 'RE'
-  | 'RA'
-  | 'RD'
-  | 'EE'
-  | 'ER'
-  | 'EA'
-  | 'ED'
-  | 'AA'
-  | 'AR'
-  | 'AE'
-  | 'AD'
-  | 'DD'
-  | 'DR'
-  | 'DE'
-  | 'DA'
+export type ICRUCode = 'RR' | 'RE' | 'RA' | 'RD' | 'EE' | 'ER' | 'EA' | 'ED' | 'AA' | 'AR' | 'AE' | 'AD' | 'DD' | 'DR' | 'DE' | 'DA'
 
 /**
  * ICRU 코드와 해당하는 메인/서브 타입 매핑
@@ -189,6 +174,7 @@ export const getICRUCode = (scores: ICRUScores): ICRUCode => {
     if (b[1] !== a[1]) {
       return b[1] - a[1]
     }
+
     // 점수가 같은 경우 우선순위로 정렬 (A > D > R > E)
     return ICRU_PRIORITY_ORDER.indexOf(a[0]) - ICRU_PRIORITY_ORDER.indexOf(b[0])
   })
@@ -216,6 +202,7 @@ export const getICRUCode = (scores: ICRUScores): ICRUCode => {
 
   // 그 외의 경우
   const secondHighest = others[0]
+
   return `${highest[0]}${secondHighest[0]}` as ICRUCode
 }
 
@@ -227,9 +214,11 @@ export const getICRUCode = (scores: ICRUScores): ICRUCode => {
  */
 export const getTypeInfo = (code: ICRUCode) => {
   const typeInfo = TYPE_MAPPING[code]
+
   if (!typeInfo) {
     throw new Error(`Invalid ICRU code: ${code}`)
   }
+
   return typeInfo
 }
 
@@ -248,6 +237,7 @@ export const determineICRUType = (scores: ICRUScores) => {
   })
 
   const code = getICRUCode(scores)
+
   return {
     code,
     ...getTypeInfo(code),

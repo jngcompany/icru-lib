@@ -49,10 +49,7 @@ export const DiagnosisStatusEntries = Object.entries(DiagnosisStatus) as [string
  * 이 변수의 타입은 문자열 튜플의 배열로 엄격하게 정의됩니다:
  * `[string, string][]`
  */
-export const DiagnosisStatusValuesEntries = Object.values(DiagnosisStatus).map((value) => [value, value]) as [
-  string,
-  string,
-][]
+export const DiagnosisStatusValuesEntries = Object.values(DiagnosisStatus).map((value) => [value, value]) as [string, string][]
 
 /**
  * DiagnosisStatus 객체의 키에서 파생된 엔트리 배열
