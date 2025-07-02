@@ -6,7 +6,9 @@ import {
   RevolutionerSubType,
 } from '../enums/DiagnosisCase'
 import { DiagnosisGroupStatus } from '../enums/DiagnosisGroupStatus'
-import { DiagnosisStatus, InvitationStatus, ReportType } from '../Index'
+import { DiagnosisStatus } from '../enums/DiagnosisStatus'
+import { InvitationStatus } from '../enums/InvitationStatus'
+import { ReportType } from '../enums/ReportType'
 
 export const mainTypeKorean: { [key in MainType]: string } = {
   [MainType.REVOLUTIONER]: '창조가',
