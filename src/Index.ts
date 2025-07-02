@@ -49,7 +49,6 @@ export * from './types/UserDiagnosis'
 export * from './utils/amountFormat'
 export * from './utils/formReducer'
 export * from './utils/ICRUTypeCalculator'
-export * from './utils/ss2Data'
 
 // Constants
 export * from './constants/mainTypeColor'
