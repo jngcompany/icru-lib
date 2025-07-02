@@ -1,5 +1,6 @@
 'use client'
-import { MainType } from '@/common/enums/DiagnosisCase'
+
+import { MainType } from '../enums/DiagnosisCase'
 
 export const mainTypeColor = {
   [MainType.REVOLUTIONER]: '#C661F3',

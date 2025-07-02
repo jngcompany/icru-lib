@@ -1,5 +1,4 @@
-'use client'
-import { ActionerSubType, DetectorSubType, EmotionerSubType, RevolutionerSubType } from '@/common/enums/DiagnosisCase'
+import { ActionerSubType, DetectorSubType, EmotionerSubType, RevolutionerSubType } from '../enums/DiagnosisCase'
 
 export const subTypeColor = {
   // REVOLUTIONER TYPES
