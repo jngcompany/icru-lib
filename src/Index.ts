@@ -1,11 +1,11 @@
-// (DELETE THIS FILE. All exports should be handled by src/index.ts)
-
-// export * from './enums/DiagnosisGroupStatus'
+// Enums
 export * from './enums/AnswerType'
 export * from './enums/Collections'
 export * from './enums/ContractType'
 export * from './enums/Country'
+export * from './enums/CreditTransactionType'
 export * from './enums/DiagnosisCase'
+export * from './enums/DiagnosisGroupStatus'
 export * from './enums/DiagnosisStatus'
 export * from './enums/ExpireType'
 export * from './enums/Gender'
@@ -23,7 +23,7 @@ export * from './enums/ReportStatus'
 export * from './enums/ReportType'
 export * from './enums/UserType'
 
-// Export all types
+// Types
 export * from './types/Address'
 export * from './types/Answer'
 export * from './types/Credit'
@@ -45,13 +45,13 @@ export * from './types/User'
 export * from './types/UserAnswer'
 export * from './types/UserDiagnosis'
 
-// Export all utils
+// Utils
 export * from './utils/amountFormat'
 export * from './utils/formReducer'
 export * from './utils/ICRUTypeCalculator'
 export * from './utils/ss2Data'
 
-// Export all constants
+// Constants
 export * from './constants/mainTypeColor'
 export * from './constants/subTypeColor'
 export * from './constants/toko'
