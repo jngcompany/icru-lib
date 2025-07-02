@@ -1,8 +1,12 @@
-import { ActionerSubType, DetectorSubType, EmotionerSubType, MainType, RevolutionerSubType } from '@/common/enums/DiagnosisCase'
-import { DiagnosisGroupStatus } from '@/common/enums/DiagnosisGroupStatus'
-import { DiagnosisStatus } from '@/common/enums/DiagnosisStatus'
-import { InvitationStatus } from '@/common/enums/InvitationStatus'
-import { ReportType } from '@/common/enums/ReportType'
+import {
+  ActionerSubType,
+  DetectorSubType,
+  EmotionerSubType,
+  MainType,
+  RevolutionerSubType,
+} from '../enums/DiagnosisCase'
+import { DiagnosisGroupStatus } from '../enums/DiagnosisGroupStatus'
+import { DiagnosisStatus, InvitationStatus, ReportType } from '../Index'
 
 export const mainTypeKorean: { [key in MainType]: string } = {
   [MainType.REVOLUTIONER]: '창조가',
