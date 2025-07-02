@@ -45,11 +45,6 @@ export * from './types/User'
 export * from './types/UserAnswer'
 export * from './types/UserDiagnosis'
 
-// Utils
-export * from './utils/amountFormat'
-export * from './utils/formReducer'
-export * from './utils/ICRUTypeCalculator'
-
 // Constants
 export * from './constants/mainTypeColor'
 export * from './constants/subTypeColor'
