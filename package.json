@@ -8,7 +8,6 @@
   "version": "25.6.0",
   "type": "module",
   "main": "./dist/index.js",
-  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
@@ -28,20 +27,18 @@
     "docs": "typedoc --out docs src --plugin typedoc-plugin-markdown"
   },
   "peerDependencies": {
-    "firebase": "^11.10.0"
+    "firebase": "^11.10.0",
+    "firebase-admin": "^13.4.0"
   },
   "devDependencies": {
     "prettier": "^3.4.2",
     "react": "^19.0.0",
     "typedoc": "^0.27.6",
-    "typedoc-plugin-markdown": "^3.11.0",
+    "typedoc-plugin-markdown": "^3.17.1",
     "typescript": "^5.7.3"
   },
   "publishConfig": {
     "access": "restricted",
     "registry": "https://npm.pkg.github.com"
-  },
-  "dependencies": {
-    "firebase-admin": "^13.4.0"
   }
 }
